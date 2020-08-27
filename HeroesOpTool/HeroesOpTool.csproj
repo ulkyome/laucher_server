@@ -109,10 +109,8 @@
     </Compile>
     <Compile Include="LocalizeText.cs" />
     <Compile Include="LogGenerator.cs" />
-    <Compile Include="LogTextBox.Designer.cs">
-      <DependentUpon>LogTextBox.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
+    <Compile Include="LogTextBox.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="LogViewForm.cs">
       <SubType>Form</SubType>
@@ -312,10 +310,6 @@
     <EmbeddedResource Include="InputBox.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LogTextBox.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>LogTextBox.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="LogViewForm.resx">
       <DependentUpon>LogViewForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -323,7 +317,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RCUser\GeneralManage\AuthUserManage.resx">
@@ -431,6 +425,27 @@
       <Project>{8ae8f1fa-9aa3-4333-b419-c2e66b709b63}</Project>
       <Name>RCCommon</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TSBServer.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TSBUser.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TSButtonCopy.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HeroesOpTool-GM.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HeroesOpToolConfig.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\this.Icon.ico" />
+    <Content Include="Texts.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

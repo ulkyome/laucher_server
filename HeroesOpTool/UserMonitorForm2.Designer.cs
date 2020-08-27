@@ -13,54 +13,67 @@
 
 		private void InitializeComponent()
 		{
-			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::HeroesOpTool.UserMonitorForm2));
-			this.TSComboStyle = new global::System.Windows.Forms.ToolStripComboBox();
-			this.TSButtonCopy = new global::System.Windows.Forms.ToolStripButton();
-			this.panel = new global::System.Windows.Forms.Panel();
-			global::System.Windows.Forms.ToolStrip toolStrip = new global::System.Windows.Forms.ToolStrip();
-			toolStrip.SuspendLayout();
-			base.SuspendLayout();
-			toolStrip.Items.AddRange(new global::System.Windows.Forms.ToolStripItem[]
-			{
-				this.TSComboStyle,
-				this.TSButtonCopy
-			});
-			toolStrip.Location = new global::System.Drawing.Point(0, 0);
-			toolStrip.Name = "toolStrip";
-			toolStrip.Size = new global::System.Drawing.Size(792, 25);
-			toolStrip.TabIndex = 5;
-			toolStrip.Text = "toolStrip";
-			this.TSComboStyle.DropDownStyle = global::System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.TSComboStyle.Name = "TSComboStyle";
-			this.TSComboStyle.Size = new global::System.Drawing.Size(121, 25);
-			this.TSComboStyle.SelectedIndexChanged += new global::System.EventHandler(this.TSComboStyle_SelectedIndexChanged);
-			this.TSButtonCopy.DisplayStyle = global::System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-			this.TSButtonCopy.Image = (global::System.Drawing.Image)componentResourceManager.GetObject("TSButtonCopy.Image");
-			this.TSButtonCopy.ImageTransparentColor = global::System.Drawing.Color.Magenta;
-			this.TSButtonCopy.Name = "TSButtonCopy";
-			this.TSButtonCopy.Size = new global::System.Drawing.Size(99, 22);
-			this.TSButtonCopy.Text = global::HeroesOpTool.LocalizeText.Get(538);
-			this.TSButtonCopy.Click += new global::System.EventHandler(this.TSButtonCopy_Click);
-			this.panel.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.panel.AutoScroll = true;
-			this.panel.BackColor = global::System.Drawing.SystemColors.AppWorkspace;
-			this.panel.BorderStyle = global::System.Windows.Forms.BorderStyle.Fixed3D;
-			this.panel.Location = new global::System.Drawing.Point(0, 28);
-			this.panel.Name = "panel";
-			this.panel.Size = new global::System.Drawing.Size(792, 545);
-			this.panel.TabIndex = 4;
-			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
-			this.BackColor = global::System.Drawing.SystemColors.Control;
-			base.ClientSize = new global::System.Drawing.Size(792, 573);
-			base.Controls.Add(toolStrip);
-			base.Controls.Add(this.panel);
-			base.Name = "UserMonitorForm2";
-			this.Text = global::HeroesOpTool.LocalizeText.Get(397);
-			base.FormClosing += new global::System.Windows.Forms.FormClosingEventHandler(this.UserMonitorForm2_FormClosing);
-			toolStrip.ResumeLayout(false);
-			toolStrip.PerformLayout();
-			base.ResumeLayout(false);
-			base.PerformLayout();
+            this.TSComboStyle = new System.Windows.Forms.ToolStripComboBox();
+            this.TSButtonCopy = new System.Windows.Forms.ToolStripButton();
+            this.panel = new System.Windows.Forms.Panel();
+            this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.toolStrip.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // TSComboStyle
+            // 
+            this.TSComboStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TSComboStyle.Name = "TSComboStyle";
+            this.TSComboStyle.Size = new System.Drawing.Size(101, 25);
+            this.TSComboStyle.SelectedIndexChanged += new System.EventHandler(this.TSComboStyle_SelectedIndexChanged);
+            // 
+            // TSButtonCopy
+            // 
+            this.TSButtonCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.TSButtonCopy.Image = global::HeroesOpTool.Properties.Resources.TSButtonCopy_Image;
+            this.TSButtonCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TSButtonCopy.Name = "TSButtonCopy";
+            this.TSButtonCopy.Size = new System.Drawing.Size(23, 22);
+            this.TSButtonCopy.Click += new System.EventHandler(this.TSButtonCopy_Click);
+            // 
+            // panel
+            // 
+            this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel.AutoScroll = true;
+            this.panel.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel.Location = new System.Drawing.Point(0, 26);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(792, 547);
+            this.panel.TabIndex = 4;
+            // 
+            // toolStrip
+            // 
+            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSComboStyle,
+            this.TSButtonCopy});
+            this.toolStrip.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip.Name = "toolStrip";
+            this.toolStrip.Size = new System.Drawing.Size(792, 25);
+            this.toolStrip.TabIndex = 5;
+            this.toolStrip.Text = "toolStrip";
+            // 
+            // UserMonitorForm2
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(792, 573);
+            this.Controls.Add(this.toolStrip);
+            this.Controls.Add(this.panel);
+            this.Name = "UserMonitorForm2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserMonitorForm2_FormClosing);
+            this.toolStrip.ResumeLayout(false);
+            this.toolStrip.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
 		}
 
 		//private global::System.ComponentModel.IContainer components;
@@ -70,5 +83,6 @@
 		private global::System.Windows.Forms.ToolStripComboBox TSComboStyle;
 
 		private global::System.Windows.Forms.ToolStripButton TSButtonCopy;
-	}
+        private System.Windows.Forms.ToolStrip toolStrip;
+    }
 }

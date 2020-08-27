@@ -33,7 +33,8 @@
 			this.menuItemControl.Click += new global::System.EventHandler(this.menuItemControl_Click);
 			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
 			base.ClientSize = new global::System.Drawing.Size(792, 573);
-			base.Icon = (global::System.Drawing.Icon)resourceManager.GetObject("$this.Icon");
+			
+			base.Icon = Properties.Resources.this_Icon;
 			base.Menu = this.mainMenu1;
 			base.Name = "ServerMonitorForm";
 			this.Text = "서버 모니터링 창";
