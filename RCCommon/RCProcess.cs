@@ -182,7 +182,8 @@ namespace RemoteControlSystem
 					this._runProcess = new Process();
 					this.cpuUsage = new CpuUsage();
 					ProcessStartInfo processStartInfo = new ProcessStartInfo();
-					processStartInfo.WorkingDirectory = BaseConfiguration.WorkingDirectory + "\\" + this.WorkingDirectory;
+					//processStartInfo.WorkingDirectory = BaseConfiguration.WorkingDirectory + "\\" + this.WorkingDirectory; old
+					processStartInfo.WorkingDirectory = this.WorkingDirectory;
 					this.SetProfilingEnvironment(ref processStartInfo);
 					RCProcess.MakeProcess(processStartInfo, this.ExecuteName, this.ExecuteArgs);
 					processStartInfo.RedirectStandardInput = true;
