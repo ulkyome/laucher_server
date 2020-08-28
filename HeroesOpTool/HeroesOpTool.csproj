@@ -326,7 +326,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>LogTextBox.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-	 <Compile Include="LogTextBox.Designer.cs">
+    <Compile Include="LogTextBox.Designer.cs">
       <DependentUpon>LogTextBox.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -459,9 +459,6 @@
     <None Include="Resources\TSButtonCopy.Image.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="HeroesOpTool-GM.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="HeroesOpToolConfig.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

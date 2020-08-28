@@ -21,7 +21,7 @@ namespace HeroesOpTool
 		public string TextFile = "Texts.xml";
 
 		[XmlAttribute]
-		public string Language = "korean";
+		public string Language = "english";
 
 		[XmlIgnore]
 		public string ID;
