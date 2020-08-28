@@ -1,6 +1,10 @@
-﻿namespace HeroesOpTool
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace HeroesOpTool
 {
-	public partial class UserMonitorForm2 : global::System.Windows.Forms.Form
+	public partial class UserMonitorForm2 : Form
 	{
 		//protected override void Dispose(bool disposing)
 		//{
@@ -13,62 +17,62 @@
 
 		private void InitializeComponent()
 		{
-            this.TSComboStyle = new System.Windows.Forms.ToolStripComboBox();
-            this.TSButtonCopy = new System.Windows.Forms.ToolStripButton();
-            this.panel = new System.Windows.Forms.Panel();
-            this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.TSComboStyle = new ToolStripComboBox();
+            this.TSButtonCopy = new ToolStripButton();
+            this.panel = new Panel();
+            this.toolStrip = new ToolStrip();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // TSComboStyle
             // 
-            this.TSComboStyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TSComboStyle.DropDownStyle = ComboBoxStyle.DropDownList;
             this.TSComboStyle.Name = "TSComboStyle";
-            this.TSComboStyle.Size = new System.Drawing.Size(101, 25);
-            this.TSComboStyle.SelectedIndexChanged += new System.EventHandler(this.TSComboStyle_SelectedIndexChanged);
+            this.TSComboStyle.Size = new Size(101, 25);
+            this.TSComboStyle.SelectedIndexChanged += new EventHandler(this.TSComboStyle_SelectedIndexChanged);
             // 
             // TSButtonCopy
             // 
-            this.TSButtonCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.TSButtonCopy.Image = global::HeroesOpTool.Properties.Resources.TSButtonCopy_Image;
-            this.TSButtonCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.TSButtonCopy.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            this.TSButtonCopy.Image = Properties.Resources.TSButtonCopy_Image;
+            this.TSButtonCopy.ImageTransparentColor = Color.Magenta;
             this.TSButtonCopy.Name = "TSButtonCopy";
-            this.TSButtonCopy.Size = new System.Drawing.Size(23, 22);
-            this.TSButtonCopy.Click += new System.EventHandler(this.TSButtonCopy_Click);
+            this.TSButtonCopy.Size = new Size(23, 22);
+            this.TSButtonCopy.Click += new EventHandler(this.TSButtonCopy_Click);
             // 
             // panel
             // 
-            this.panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel.Anchor = ((AnchorStyles)((((AnchorStyles.Top | AnchorStyles.Bottom) 
+            | AnchorStyles.Left) 
+            | AnchorStyles.Right)));
             this.panel.AutoScroll = true;
-            this.panel.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel.Location = new System.Drawing.Point(0, 26);
+            this.panel.BackColor = SystemColors.AppWorkspace;
+            this.panel.BorderStyle = BorderStyle.Fixed3D;
+            this.panel.Location = new Point(0, 26);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(792, 547);
+            this.panel.Size = new Size(792, 547);
             this.panel.TabIndex = 4;
             // 
             // toolStrip
             // 
-            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStrip.Items.AddRange(new ToolStripItem[] {
             this.TSComboStyle,
             this.TSButtonCopy});
-            this.toolStrip.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip.Location = new Point(0, 0);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(792, 25);
+            this.toolStrip.Size = new Size(792, 25);
             this.toolStrip.TabIndex = 5;
             this.toolStrip.Text = "toolStrip";
             // 
             // UserMonitorForm2
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(792, 573);
+            this.AutoScaleBaseSize = new Size(5, 13);
+            this.BackColor = SystemColors.Control;
+            this.ClientSize = new Size(792, 573);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.panel);
             this.Name = "UserMonitorForm2";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.UserMonitorForm2_FormClosing);
+            this.FormClosing += new FormClosingEventHandler(this.UserMonitorForm2_FormClosing);
             this.toolStrip.ResumeLayout(false);
             this.toolStrip.PerformLayout();
             this.ResumeLayout(false);
@@ -78,11 +82,11 @@
 
 		//private global::System.ComponentModel.IContainer components;
 
-		private global::System.Windows.Forms.Panel panel;
+		private Panel panel;
 
-		private global::System.Windows.Forms.ToolStripComboBox TSComboStyle;
+		private ToolStripComboBox TSComboStyle;
 
-		private global::System.Windows.Forms.ToolStripButton TSButtonCopy;
-        private System.Windows.Forms.ToolStrip toolStrip;
+		private ToolStripButton TSButtonCopy;
+        private ToolStrip toolStrip;
     }
 }
