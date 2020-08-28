@@ -26,10 +26,10 @@
 			{
 				this.menuItemControl
 			});
-			this.menuItem1.Text = "서버 모니터링 메뉴";
+			this.menuItem1.Text = "Server monitoring menu";
 			this.menuItemControl.Index = 0;
 			this.menuItemControl.Shortcut = global::System.Windows.Forms.Shortcut.F10;
-			this.menuItemControl.Text = "환경 설정";
+			this.menuItemControl.Text = "Preferences";
 			this.menuItemControl.Click += new global::System.EventHandler(this.menuItemControl_Click);
 			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
 			base.ClientSize = new global::System.Drawing.Size(792, 573);
@@ -37,7 +37,7 @@
 			base.Icon = Properties.Resources.this_Icon;
 			base.Menu = this.mainMenu1;
 			base.Name = "ServerMonitorForm";
-			this.Text = "서버 모니터링 창";
+			this.Text = "Server monitoring window";
 		}
 
 		private global::System.Windows.Forms.MainMenu mainMenu1;

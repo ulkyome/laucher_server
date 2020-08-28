@@ -33,7 +33,7 @@
 			this.groupBoxCommand.SuspendLayout();
 			this.groupBoxArgList.SuspendLayout();
 			base.SuspendLayout();
-			this.labelComment.Font = new global::System.Drawing.Font("굴림", 8.25f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 129);
+			this.labelComment.Font = new global::System.Drawing.Font("Roll", 8.25f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 129);
 			this.labelComment.Location = new global::System.Drawing.Point(103, 124);
 			this.labelComment.Margin = new global::System.Windows.Forms.Padding(0);
 			this.labelComment.Name = "labelComment";
@@ -52,13 +52,13 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new global::System.Drawing.Size(96, 29);
 			this.buttonCancel.TabIndex = 5;
-			this.buttonCancel.Text = "취소";
+			this.buttonCancel.Text = "cancel";
 			this.buttonOK.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
 			this.buttonOK.Location = new global::System.Drawing.Point(228, 8);
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new global::System.Drawing.Size(96, 29);
 			this.buttonOK.TabIndex = 4;
-			this.buttonOK.Text = "실행";
+			this.buttonOK.Text = "Execution";
 			this.buttonOK.Click += new global::System.EventHandler(this.buttonOK_Click);
 			this.tabControl1.Controls.Add(this.tabPage1);
 			this.tabControl1.Dock = global::System.Windows.Forms.DockStyle.Fill;
@@ -75,7 +75,7 @@
 			this.tabPage1.Padding = new global::System.Windows.Forms.Padding(3);
 			this.tabPage1.Size = new global::System.Drawing.Size(430, 210);
 			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "서버 명령";
+			this.tabPage1.Text = "Server command";
 			this.tabPage1.UseVisualStyleBackColor = true;
 			this.splitContainer.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.splitContainer.Location = new global::System.Drawing.Point(8, 6);
@@ -92,7 +92,7 @@
 			this.groupBoxCommand.Size = new global::System.Drawing.Size(137, 204);
 			this.groupBoxCommand.TabIndex = 1;
 			this.groupBoxCommand.TabStop = false;
-			this.groupBoxCommand.Text = "가능한 명령들";
+			this.groupBoxCommand.Text = "Possible commands";
 			this.listBoxCommand.Dock = global::System.Windows.Forms.DockStyle.Fill;
 			this.listBoxCommand.ItemHeight = 12;
 			this.listBoxCommand.Location = new global::System.Drawing.Point(3, 17);
@@ -107,7 +107,7 @@
 			this.groupBoxArgList.Size = new global::System.Drawing.Size(275, 204);
 			this.groupBoxArgList.TabIndex = 2;
 			this.groupBoxArgList.TabStop = false;
-			this.groupBoxArgList.Text = "실행 옵션";
+			this.groupBoxArgList.Text = "Run option";
 			this.panelArgList.AutoScroll = true;
 			this.panelArgList.Dock = global::System.Windows.Forms.DockStyle.Fill;
 			this.panelArgList.Location = new global::System.Drawing.Point(3, 17);
@@ -123,7 +123,7 @@
 			base.MinimizeBox = false;
 			base.Name = "StdinCommandForm";
 			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "사용자 정의 명령을 선택하세요.";
+			this.Text = "Choose a custom command.";
 			this.panelButton.ResumeLayout(false);
 			this.tabControl1.ResumeLayout(false);
 			this.tabPage1.ResumeLayout(false);

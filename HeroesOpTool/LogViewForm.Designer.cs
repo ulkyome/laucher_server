@@ -33,7 +33,7 @@
 			this.buttonInput.Name = "buttonInput";
 			this.buttonInput.Size = new global::System.Drawing.Size(75, 23);
 			this.buttonInput.TabIndex = 3;
-			this.buttonInput.Text = "입력";
+			this.buttonInput.Text = "input";
 			this.buttonInput.UseVisualStyleBackColor = true;
 			this.TBoxInput.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.TBoxInput.Enabled = false;
@@ -58,7 +58,7 @@
 			base.Controls.Add(this.panel2);
 			base.Icon = (global::System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "LogViewForm";
-			this.Text = "로그 보기";
+			this.Text = "View log";
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
 			base.ResumeLayout(false);

@@ -106,7 +106,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			this.groupBoxStandardInProperty.Text = LocalizeText.Get(287);
 			this.toolTipProperty.SetToolTip(this.groupBoxStandardInProperty, LocalizeText.Get(288));
 			this.columnHeader1.Text = LocalizeText.Get(289);
-			this.columnHeader2.Text = LocalizeText.Get(290);
+			this.defComm.Text = LocalizeText.Get(290);
 			this.label1.Text = LocalizeText.Get(291);
 			this.Text = LocalizeText.Get(430);
 		}
@@ -393,7 +393,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 
 		private void buttonPropertyAdd_Click(object sender, EventArgs e)
 		{
-			TwoStringInputForm twoStringInputForm = new TwoStringInputForm("프로세스 속성 추가", "프로세스 속성을 입력하세요", "Key", "Value");
+			TwoStringInputForm twoStringInputForm = new TwoStringInputForm("Add process attribute", "Enter process properties", "Key", "Value");
 			while (twoStringInputForm.ShowDialog() == DialogResult.OK)
 			{
 				try
@@ -409,7 +409,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 				}
 				catch (Exception ex)
 				{
-					Utility.ShowErrorMessage("속성을 추가할 수 없습니다. 원본 메세지: " + ex.Message);
+					Utility.ShowErrorMessage("Cannot add attribute. Original message: " + ex.Message);
 				}
 			}
 		}
@@ -424,7 +424,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 					this.listViewProperty.Items.RemoveAt(this.listViewProperty.SelectedIndices[0]);
 					return;
 				}
-				Utility.ShowErrorMessage("동적 속성은 삭제할 수 없습니다.");
+				Utility.ShowErrorMessage("Dynamic properties cannot be deleted.");
 			}
 		}
 
@@ -437,7 +437,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			if (this.listViewProperty.SelectedItems.Count > 0)
 			{
 				ListViewItem listViewItem = this.listViewProperty.SelectedItems[0];
-				TwoStringInputForm twoStringInputForm = new TwoStringInputForm("프로세스 속성 편집", this.IsStaticProperty(listViewItem) ? "프로세스 속성을 입력하세요." : "동적 속성은 편집할 수 없습니다.", "Key", "Value", listViewItem.SubItems[0].Text, listViewItem.SubItems[1].Text);
+				TwoStringInputForm twoStringInputForm = new TwoStringInputForm("Edit process properties", this.IsStaticProperty(listViewItem) ? "Enter process properties." : "Dynamic properties cannot be edited.", "Key", "Value", listViewItem.SubItems[0].Text, listViewItem.SubItems[1].Text);
 				while (twoStringInputForm.ShowDialog() == DialogResult.OK)
 				{
 					try
@@ -480,7 +480,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 						return;
 					}
 				}
-				throw new Exception(string.Format("속성 Key {0} 값이 중복되었습니다.", key));
+				throw new Exception(string.Format("property Key {0} Duplicate values.", key));
 			}
 		}
 

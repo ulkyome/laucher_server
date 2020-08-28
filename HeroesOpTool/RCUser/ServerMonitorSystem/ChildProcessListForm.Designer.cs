@@ -20,7 +20,7 @@
 			global::System.Windows.Forms.ColumnHeader columnHeader = new global::System.Windows.Forms.ColumnHeader();
 			this.panel1.SuspendLayout();
 			base.SuspendLayout();
-			columnHeader.Text = "프로세스 ID";
+			columnHeader.Text = "process ID";
 			columnHeader.Width = 189;
 			this.panel1.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.panel1.Controls.Add(this.btnClose);
@@ -35,7 +35,7 @@
 			this.btnClose.Name = "btnClose";
 			this.btnClose.Size = new global::System.Drawing.Size(75, 23);
 			this.btnClose.TabIndex = 1;
-			this.btnClose.Text = "닫기";
+			this.btnClose.Text = "close";
 			this.btnClose.UseVisualStyleBackColor = true;
 			this.btnClose.Click += new global::System.EventHandler(this.btnClose_Click);
 			this.btnOK.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left);
@@ -43,7 +43,7 @@
 			this.btnOK.Name = "btnOK";
 			this.btnOK.Size = new global::System.Drawing.Size(75, 23);
 			this.btnOK.TabIndex = 0;
-			this.btnOK.Text = "확인";
+			this.btnOK.Text = "Confirm";
 			this.btnOK.UseVisualStyleBackColor = true;
 			this.btnOK.Click += new global::System.EventHandler(this.btnOK_Click);
 			this.listView.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
@@ -75,7 +75,7 @@
 			base.ShowIcon = false;
 			base.ShowInTaskbar = false;
 			base.StartPosition = global::System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "자식 프로세스 리스트";
+			this.Text = "List of child processes";
 			base.TopMost = true;
 			this.panel1.ResumeLayout(false);
 			base.ResumeLayout(false);

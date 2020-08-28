@@ -58,7 +58,7 @@
 			this.groupBoxCommand.Size = new global::System.Drawing.Size(186, 291);
 			this.groupBoxCommand.TabIndex = 5;
 			this.groupBoxCommand.TabStop = false;
-			this.groupBoxCommand.Text = "사용 가능한 명령";
+			this.groupBoxCommand.Text = "Available commands";
 			this.listBoxCommand.Dock = global::System.Windows.Forms.DockStyle.Fill;
 			this.listBoxCommand.FormattingEnabled = true;
 			this.listBoxCommand.ItemHeight = 12;
@@ -83,7 +83,7 @@
 			this.groupBoxServer.Size = new global::System.Drawing.Size(340, 66);
 			this.groupBoxServer.TabIndex = 4;
 			this.groupBoxServer.TabStop = false;
-			this.groupBoxServer.Text = "서버군";
+			this.groupBoxServer.Text = "Server group";
 			this.checkedListBoxServer.CheckOnClick = true;
 			this.checkedListBoxServer.Dock = global::System.Windows.Forms.DockStyle.Fill;
 			this.checkedListBoxServer.FormattingEnabled = true;
@@ -98,7 +98,7 @@
 			this.groupBoxArgList.Size = new global::System.Drawing.Size(340, 221);
 			this.groupBoxArgList.TabIndex = 6;
 			this.groupBoxArgList.TabStop = false;
-			this.groupBoxArgList.Text = "실행 인자";
+			this.groupBoxArgList.Text = "Execution factor";
 			this.panelArgList.Dock = global::System.Windows.Forms.DockStyle.Fill;
 			this.panelArgList.Location = new global::System.Drawing.Point(3, 17);
 			this.panelArgList.Name = "panelArgList";
@@ -133,7 +133,7 @@
 			this.checkSchedule.Name = "checkSchedule";
 			this.checkSchedule.Size = new global::System.Drawing.Size(48, 16);
 			this.checkSchedule.TabIndex = 8;
-			this.checkSchedule.Text = "예약";
+			this.checkSchedule.Text = "reservation";
 			this.checkSchedule.UseVisualStyleBackColor = true;
 			this.checkSchedule.CheckedChanged += new global::System.EventHandler(this.checkSchedule_CheckedChanged);
 			this.buttonCancel.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
@@ -142,14 +142,14 @@
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new global::System.Drawing.Size(96, 29);
 			this.buttonCancel.TabIndex = 7;
-			this.buttonCancel.Text = "취소";
+			this.buttonCancel.Text = "cancel";
 			this.buttonOK.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
 			this.buttonOK.FlatAppearance.BorderSize = 0;
 			this.buttonOK.Location = new global::System.Drawing.Point(332, 8);
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new global::System.Drawing.Size(96, 29);
 			this.buttonOK.TabIndex = 6;
-			this.buttonOK.Text = "실행";
+			this.buttonOK.Text = "Execution";
 			this.buttonOK.Click += new global::System.EventHandler(this.buttonOK_Click);
 			this.panelTop.BackColor = global::System.Drawing.SystemColors.Control;
 			this.panelTop.Controls.Add(this.textBox1);
@@ -166,7 +166,7 @@
 			this.textBox1.ReadOnly = true;
 			this.textBox1.Size = new global::System.Drawing.Size(411, 25);
 			this.textBox1.TabIndex = 0;
-			this.textBox1.Text = "이 곳의 명령은 서버군 전체에 적용됩니다.\r\n명령은 CommandBridge 속성을 가진 프로세스에서 설정됩니다.";
+			this.textBox1.Text = "The commands here apply to the entire server family..\r\nThe command is set in a process with the CommandBridge attribute.";
 			this.panelSchdule.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.panelSchdule.AutoSize = true;
 			this.panelSchdule.BackColor = global::System.Drawing.SystemColors.Window;
@@ -185,7 +185,7 @@
 			base.Controls.Add(this.panelMid);
 			base.Name = "ServerCommandForm";
 			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "서버 명령을 선택하세요.";
+			this.Text = "Choose a server command.";
 			splitContainer.Panel1.ResumeLayout(false);
 			splitContainer.Panel2.ResumeLayout(false);
 			splitContainer.ResumeLayout(false);

@@ -46,7 +46,7 @@
 			this.groupBoxName.Size = new global::System.Drawing.Size(174, 45);
 			this.groupBoxName.TabIndex = 1;
 			this.groupBoxName.TabStop = false;
-			this.groupBoxName.Text = "명령 이름";
+			this.groupBoxName.Text = "Command name";
 			this.textBoxName.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.textBoxName.Location = new global::System.Drawing.Point(6, 18);
 			this.textBoxName.Name = "textBoxName";
@@ -65,7 +65,7 @@
 			this.groupBoxCommand.Size = new global::System.Drawing.Size(174, 45);
 			this.groupBoxCommand.TabIndex = 2;
 			this.groupBoxCommand.TabStop = false;
-			this.groupBoxCommand.Text = "명령";
+			this.groupBoxCommand.Text = "Command";
 			this.groupBoxArg.Controls.Add(this.buttoArgDel);
 			this.groupBoxArg.Controls.Add(this.buttonArgAdd);
 			this.groupBoxArg.Controls.Add(this.comboBoxType);
@@ -77,7 +77,7 @@
 			this.groupBoxArg.Size = new global::System.Drawing.Size(174, 104);
 			this.groupBoxArg.TabIndex = 3;
 			this.groupBoxArg.TabStop = false;
-			this.groupBoxArg.Text = "인자";
+			this.groupBoxArg.Text = "factor";
 			this.buttoArgDel.Location = new global::System.Drawing.Point(144, 72);
 			this.buttoArgDel.Name = "buttoArgDel";
 			this.buttoArgDel.Size = new global::System.Drawing.Size(24, 24);
@@ -102,13 +102,13 @@
 			this.labelArgType.Name = "labelArgType";
 			this.labelArgType.Size = new global::System.Drawing.Size(29, 12);
 			this.labelArgType.TabIndex = 2;
-			this.labelArgType.Text = "타입";
+			this.labelArgType.Text = "type";
 			this.labelArgName.AutoSize = true;
 			this.labelArgName.Location = new global::System.Drawing.Point(6, 21);
 			this.labelArgName.Name = "labelArgName";
 			this.labelArgName.Size = new global::System.Drawing.Size(29, 12);
 			this.labelArgName.TabIndex = 0;
-			this.labelArgName.Text = "이름";
+			this.labelArgName.Text = "name";
 			this.textBoxArgName.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.textBoxArgName.Location = new global::System.Drawing.Point(41, 18);
 			this.textBoxArgName.Name = "textBoxArgName";
@@ -124,7 +124,7 @@
 			this.groupBoxArgList.Size = new global::System.Drawing.Size(187, 205);
 			this.groupBoxArgList.TabIndex = 4;
 			this.groupBoxArgList.TabStop = false;
-			this.groupBoxArgList.Text = "인자 리스트";
+			this.groupBoxArgList.Text = "Argument list";
 			this.textBoxDesc.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.textBoxDesc.Location = new global::System.Drawing.Point(7, 176);
 			this.textBoxDesc.Name = "textBoxDesc";
@@ -155,7 +155,7 @@
 			this.labelDesc.Name = "labelDesc";
 			this.labelDesc.Size = new global::System.Drawing.Size(29, 12);
 			this.labelDesc.TabIndex = 1;
-			this.labelDesc.Text = "설명";
+			this.labelDesc.Text = "Explanation";
 			this.textBoxRawCommand.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.textBoxRawCommand.Location = new global::System.Drawing.Point(12, 224);
 			this.textBoxRawCommand.Name = "textBoxRawCommand";
@@ -168,14 +168,14 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new global::System.Drawing.Size(104, 24);
 			this.buttonOK.TabIndex = 5;
-			this.buttonOK.Text = "확인";
+			this.buttonOK.Text = "Confirm";
 			this.buttonCancel.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
 			this.buttonCancel.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
 			this.buttonCancel.Location = new global::System.Drawing.Point(276, 252);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new global::System.Drawing.Size(104, 24);
 			this.buttonCancel.TabIndex = 6;
-			this.buttonCancel.Text = "취소";
+			this.buttonCancel.Text = "Cancel";
 			base.AcceptButton = this.buttonOK;
 			base.AutoScaleDimensions = new global::System.Drawing.SizeF(7f, 12f);
 			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.Font;
@@ -190,7 +190,7 @@
 			base.Controls.Add(this.groupBoxName);
 			this.Name = "CustomCommandForm";
 			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "사용자 정의 명령";
+			this.Text = "Custom instruction";
 			base.FormClosing += new global::System.Windows.Forms.FormClosingEventHandler(this.CustomCommandForm_FormClosing);
 			this.groupBoxName.ResumeLayout(false);
 			this.groupBoxName.PerformLayout();

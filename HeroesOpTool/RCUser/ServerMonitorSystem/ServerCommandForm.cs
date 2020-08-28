@@ -208,7 +208,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem
 		private void checkSchedule_CheckedChanged(object sender, EventArgs e)
 		{
 			this.dateTimePicker.Enabled = this.checkSchedule.Checked;
-			this.buttonOK.Text = (this.checkSchedule.Checked ? "예약" : "실행");
+			this.buttonOK.Text = (this.checkSchedule.Checked ? "reservation" : "Execution");
 		}
 
 		private void AddSchedule(string key, DateTime datetime, string name, string command)

@@ -325,7 +325,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 		{
 			this.labelRCClient.Text = LocalizeText.Get(332);
 			this.columnHeader1.Text = LocalizeText.Get(333);
-			this.columnHeader2.Text = LocalizeText.Get(334);
+			this.pcIP.Text = LocalizeText.Get(334);
 			this.columnHeader4.Text = LocalizeText.Get(335);
 			this.labelProcess.Text = LocalizeText.Get(336);
 			this.columnHeader3.Text = LocalizeText.Get(337);
@@ -350,7 +350,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			this.labelRCClient = new Label();
 			this.listViewRCClient = new ListView();
 			this.columnHeader1 = new ColumnHeader();
-			this.columnHeader2 = new ColumnHeader();
+			this.pcIP = new ColumnHeader();
 			this.columnHeader4 = new ColumnHeader();
 			this.contextMenuClient = new ContextMenu();
 			this.menuItemClientProperty = new MenuItem();
@@ -375,13 +375,13 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			this.labelRCClient.Name = "labelRCClient";
 			this.labelRCClient.Size = new Size(368, 24);
 			this.labelRCClient.TabIndex = 0;
-			this.labelRCClient.Text = "현재 접속된 컴퓨터 리스트";
+			this.labelRCClient.Text = "List of currently connected computers";
 			this.labelRCClient.TextAlign = ContentAlignment.MiddleLeft;
 			this.listViewRCClient.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 			this.listViewRCClient.Columns.AddRange(new ColumnHeader[]
 			{
 				this.columnHeader1,
-				this.columnHeader2,
+				this.pcIP,
 				this.columnHeader4
 			});
 			this.listViewRCClient.ContextMenu = this.contextMenuClient;
@@ -394,11 +394,11 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			this.listViewRCClient.UseCompatibleStateImageBehavior = false;
 			this.listViewRCClient.View = View.Details;
 			this.listViewRCClient.SelectedIndexChanged += this.ListViewRCClient_SelectedIndexChanged;
-			this.columnHeader1.Text = "컴퓨터 이름";
+			this.columnHeader1.Text = "Computer name";
 			this.columnHeader1.Width = 180;
-			this.columnHeader2.Text = "컴퓨터 IP";
-			this.columnHeader2.Width = 120;
-			this.columnHeader4.Text = "버전";
+			this.pcIP.Text = "computer IP";
+			this.pcIP.Width = 120;
+			this.columnHeader4.Text = "version";
 			this.columnHeader4.Width = 40;
 			this.contextMenuClient.MenuItems.AddRange(new MenuItem[]
 			{
@@ -407,18 +407,18 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 				this.menuItemSelfUpdate
 			});
 			this.menuItemClientProperty.Index = 0;
-			this.menuItemClientProperty.Text = "등록 정보";
+			this.menuItemClientProperty.Text = "Registration information";
 			this.menuItem2.Index = 1;
 			this.menuItem2.Text = "-";
 			this.menuItemSelfUpdate.Index = 2;
-			this.menuItemSelfUpdate.Text = "자가 업데이트 실행";
+			this.menuItemSelfUpdate.Text = "Self Update Run";
 			this.menuItemSelfUpdate.Click += this.menuItemSelfUpdate_Click;
 			this.labelProcess.Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
 			this.labelProcess.Location = new Point(0, 8);
 			this.labelProcess.Name = "labelProcess";
 			this.labelProcess.Size = new Size(208, 24);
 			this.labelProcess.TabIndex = 1;
-			this.labelProcess.Text = "공통으로 설치된 프로그램 리스트";
+			this.labelProcess.Text = "List of commonly installed programs";
 			this.labelProcess.TextAlign = ContentAlignment.MiddleLeft;
 			this.listViewProcess.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 			this.listViewProcess.Columns.AddRange(new ColumnHeader[]
@@ -437,7 +437,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			this.listViewProcess.UseCompatibleStateImageBehavior = false;
 			this.listViewProcess.View = View.Details;
 			this.listViewProcess.DoubleClick += this.ListViewProcess_DoubleClick;
-			this.columnHeader3.Text = "프로그램 이름";
+			this.columnHeader3.Text = "Program name";
 			this.columnHeader3.Width = 180;
 			this.contextMenuProcess.MenuItems.AddRange(new MenuItem[]
 			{
@@ -448,16 +448,16 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			});
 			this.menuItemProcessAdd.Index = 0;
 			this.menuItemProcessAdd.Shortcut = Shortcut.Ins;
-			this.menuItemProcessAdd.Text = "새 프로그램 추가";
+			this.menuItemProcessAdd.Text = "Add new program";
 			this.menuItemProcessAdd.Click += this.menuItemProcessAdd_Click;
 			this.menuItemProcessRemove.Index = 1;
 			this.menuItemProcessRemove.Shortcut = Shortcut.Del;
-			this.menuItemProcessRemove.Text = "선택된 프로그램 삭제";
+			this.menuItemProcessRemove.Text = "Delete selected program";
 			this.menuItemProcessRemove.Click += this.menuItemProcessRemove_Click;
 			this.menuItemS1.Index = 2;
 			this.menuItemS1.Text = "-";
 			this.menuItemProcessProperty.Index = 3;
-			this.menuItemProcessProperty.Text = "등록 정보";
+			this.menuItemProcessProperty.Text = "Registration information";
 			this.menuItemProcessProperty.Click += this.menuItemProcessProperty_Click;
 			this.panelLeft.Controls.Add(this.labelRCClient);
 			this.panelLeft.Controls.Add(this.listViewRCClient);
@@ -501,7 +501,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 
 		private ColumnHeader columnHeader1;
 
-		private ColumnHeader columnHeader2;
+		private ColumnHeader pcIP;
 
 		private ColumnHeader columnHeader3;
 

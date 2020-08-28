@@ -49,14 +49,14 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new global::System.Drawing.Size(88, 24);
 			this.buttonOK.TabIndex = 3;
-			this.buttonOK.Text = "확인";
+			this.buttonOK.Text = "Confirm";
 			this.buttonOK.Click += new global::System.EventHandler(this.buttonOK_Click);
 			this.buttonCancel.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
 			this.buttonCancel.Location = new global::System.Drawing.Point(240, 112);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new global::System.Drawing.Size(88, 24);
 			this.buttonCancel.TabIndex = 3;
-			this.buttonCancel.Text = "취소";
+			this.buttonCancel.Text = "cancel";
 			base.AcceptButton = this.buttonOK;
 			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
 			base.CancelButton = this.buttonCancel;

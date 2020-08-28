@@ -72,7 +72,7 @@
 			this.LabelDesc.Name = "LabelDesc";
 			this.LabelDesc.Size = new global::System.Drawing.Size(53, 12);
 			this.LabelDesc.TabIndex = 4;
-			this.LabelDesc.Text = "알람끄기";
+			this.LabelDesc.Text = "Turn off the alarm";
 			this.EmergencyView.Columns.AddRange(new global::System.Windows.Forms.ColumnHeader[]
 			{
 				this.Department,
@@ -95,12 +95,12 @@
 			this.Mail.Width = 148;
 			this.Rank.Width = 85;
 			this.EmergencyCallLabel.AutoSize = true;
-			this.EmergencyCallLabel.Font = new global::System.Drawing.Font("굴림", 18f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 129);
+			this.EmergencyCallLabel.Font = new global::System.Drawing.Font("Roll", 18f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 129);
 			this.EmergencyCallLabel.Location = new global::System.Drawing.Point(36, 361);
 			this.EmergencyCallLabel.Name = "EmergencyCallLabel";
 			this.EmergencyCallLabel.Size = new global::System.Drawing.Size(130, 24);
 			this.EmergencyCallLabel.TabIndex = 6;
-			this.EmergencyCallLabel.Text = "비상연락망";
+			this.EmergencyCallLabel.Text = "Emergency contact network";
 			base.AcceptButton = this.BtnOK;
 			base.AutoScaleDimensions = new global::System.Drawing.SizeF(7f, 12f);
 			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.Font;
@@ -114,12 +114,13 @@
 			base.Controls.Add(this.BtnOK);
 			base.Controls.Add(this.ListLog);
 			base.FormBorderStyle = global::System.Windows.Forms.FormBorderStyle.FixedSingle;
-			base.Icon = (global::System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
+			
+			base.Icon = (global::System.Drawing.Icon)componentResourceManager.GetObject("Icon");
 			base.MaximizeBox = false;
 			base.MinimizeBox = false;
 			base.Name = "UserAlarmForm";
 			base.SizeGripStyle = global::System.Windows.Forms.SizeGripStyle.Show;
-			this.Text = "경고 창";
+			this.Text = "Warning window";
 			base.TopMost = true;
 			base.FormClosing += new global::System.Windows.Forms.FormClosingEventHandler(this.UserAlarmForm_FormClosing);
 			base.VisibleChanged += new global::System.EventHandler(this.UserAlarmForm_VisibleChanged);

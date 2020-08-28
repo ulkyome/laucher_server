@@ -53,8 +53,8 @@
 			this.toolStripStatusAlarm.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.toolStripStatusAlarm.Name = "toolStripStatusAlarm";
 			this.toolStripStatusAlarm.Size = new global::System.Drawing.Size(16, 17);
-			this.toolStripStatusAlarm.Text = "알람";
-			this.toolStripStatusAlarm.ToolTipText = "알람을 키거나 끕니다.";
+			this.toolStripStatusAlarm.Text = "alarm";
+			this.toolStripStatusAlarm.ToolTipText = "Turn the alarm on or off.";
 			this.toolStripStatusAlarm.Click += new global::System.EventHandler(this.toolStripStatusAlarm_Click);
 			this.MainMenuOpTool.MenuItems.AddRange(new global::System.Windows.Forms.MenuItem[]
 			{
@@ -69,33 +69,33 @@
 				this.menuItem3,
 				this.MenuItemClose
 			});
-			this.menuItem1.Text = "파일(&F)";
+			this.menuItem1.Text = "File (F)";
 			this.MenuItemAboutMe.Index = 0;
-			this.MenuItemAboutMe.Text = "내 정보(&A)";
+			this.MenuItemAboutMe.Text = "My info (A)";
 			this.MenuItemAboutMe.Click += new global::System.EventHandler(this.MenuItemAboutMe_Click);
 			this.menuItem3.Index = 1;
 			this.menuItem3.Text = "-";
 			this.MenuItemClose.Index = 2;
-			this.MenuItemClose.Text = "종료(&X)";
+			this.MenuItemClose.Text = "Exit(X)";
 			this.MenuItemClose.Click += new global::System.EventHandler(this.MenuItemClose_Click);
 			this.menuItem5.Index = 1;
 			this.menuItem5.MenuItems.AddRange(new global::System.Windows.Forms.MenuItem[]
 			{
 				this.MenuItemUser
 			});
-			this.menuItem5.Text = "관리(&M)";
+			this.menuItem5.Text = "Management(M)";
 			this.MenuItemUser.Index = 0;
-			this.MenuItemUser.Text = "운영툴 사용자 관리(&U)";
+			this.MenuItemUser.Text = "Operation tool user management(U)";
 			this.MenuItemUser.Click += new global::System.EventHandler(this.MenuItemUser_Click);
 			this.menuItem4.Index = 2;
 			this.menuItem4.MenuItems.AddRange(new global::System.Windows.Forms.MenuItem[]
 			{
 				this.MenuItemHelp
 			});
-			this.menuItem4.Text = "도움말(&H)";
+			this.menuItem4.Text = "Help(H)";
 			this.MenuItemHelp.Index = 0;
 			this.MenuItemHelp.Shortcut = global::System.Windows.Forms.Shortcut.F1;
-			this.MenuItemHelp.Text = "도움말(&H)";
+			this.MenuItemHelp.Text = "Help(H)";
 			this.MenuItemHelp.Click += new global::System.EventHandler(this.MenuItemHelp_Click);
 			this.imageListToolIcon.ImageStream = (global::System.Windows.Forms.ImageListStreamer)componentResourceManager.GetObject("imageListToolIcon.ImageStream");
 			this.imageListToolIcon.TransparentColor = global::System.Drawing.Color.White;
@@ -119,7 +119,7 @@
 			this.TSBUser.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.TSBUser.Name = "TSBUser";
 			this.TSBUser.Size = new global::System.Drawing.Size(83, 22);
-			this.TSBUser.Text = "유저 상황";
+			this.TSBUser.Text = "User situation";
 			this.TSBUser.Click += new global::System.EventHandler(this.TSBUser_Click);
 			this.TSBServer.AutoSize = false;
 			this.TSBServer.BackColor = global::System.Drawing.SystemColors.Control;
@@ -127,7 +127,7 @@
 			this.TSBServer.ImageTransparentColor = global::System.Drawing.Color.White;
 			this.TSBServer.Name = "TSBServer";
 			this.TSBServer.Size = new global::System.Drawing.Size(83, 22);
-			this.TSBServer.Text = "서버 상태";
+			this.TSBServer.Text = "Server status";
 			this.TSBServer.Click += new global::System.EventHandler(this.TSBServer_Click);
 			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
 			base.ClientSize = new global::System.Drawing.Size(1016, 700);
@@ -137,7 +137,7 @@
 			base.IsMdiContainer = true;
 			base.Menu = this.MainMenuOpTool;
 			base.Name = "MainForm";
-			this.Text = "영웅전 운영 툴";
+			this.Text = "Hero War Operation Tool";
 			base.MdiChildActivate += new global::System.EventHandler(this.MainForm_MdiChildActivate);
 			base.Closing += new global::System.ComponentModel.CancelEventHandler(this.MainForm_Closing);
 			statusStrip.ResumeLayout(false);

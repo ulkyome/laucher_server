@@ -30,25 +30,25 @@
 			this.label2.Name = "label2";
 			this.label2.Size = new global::System.Drawing.Size(160, 24);
 			this.label2.TabIndex = 1;
-			this.label2.Text = "FTP 서버의 주소와 포트";
+			this.label2.Text = "FTP Server address and port";
 			this.label2.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.label3.Location = new global::System.Drawing.Point(8, 32);
 			this.label3.Name = "label3";
 			this.label3.Size = new global::System.Drawing.Size(160, 24);
 			this.label3.TabIndex = 1;
-			this.label3.Text = "FTP 서버의 계정과 암호";
+			this.label3.Text = "FTP Server account and password";
 			this.label3.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.label4.Location = new global::System.Drawing.Point(8, 56);
 			this.label4.Name = "label4";
 			this.label4.Size = new global::System.Drawing.Size(160, 24);
 			this.label4.TabIndex = 1;
-			this.label4.Text = "업데이트 파일이 있는 폴더";
+			this.label4.Text = "Folder with update files";
 			this.label4.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.label5.Location = new global::System.Drawing.Point(8, 80);
 			this.label5.Name = "label5";
 			this.label5.Size = new global::System.Drawing.Size(216, 24);
 			this.label5.TabIndex = 1;
-			this.label5.Text = "업데이트 파일 리스트 (공백으로 구분)";
+			this.label5.Text = "List of update files (separated by spaces)";
 			this.label5.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.textBoxAddress.Location = new global::System.Drawing.Point(176, 8);
 			this.textBoxAddress.Name = "textBoxAddress";
@@ -88,14 +88,14 @@
 			this.buttonOK.Name = "buttonOK";
 			this.buttonOK.Size = new global::System.Drawing.Size(104, 24);
 			this.buttonOK.TabIndex = 8;
-			this.buttonOK.Text = "실행";
+			this.buttonOK.Text = "Execution";
 			this.buttonOK.Click += new global::System.EventHandler(this.buttonOK_Click);
 			this.buttonCancel.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
 			this.buttonCancel.Location = new global::System.Drawing.Point(232, 168);
 			this.buttonCancel.Name = "buttonCancel";
 			this.buttonCancel.Size = new global::System.Drawing.Size(104, 24);
 			this.buttonCancel.TabIndex = 8;
-			this.buttonCancel.Text = "취소";
+			this.buttonCancel.Text = "cancel";
 			base.AcceptButton = this.buttonOK;
 			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
 			base.CancelButton = this.buttonCancel;
@@ -117,7 +117,7 @@
 			base.MinimizeBox = false;
 			base.Name = "SelfUpdateForm";
 			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "원격 제어 컴퓨터 업데이트용 FTP 서버 정보";
+			this.Text = "FTP server information for remote control computer updates";
 			base.ResumeLayout(false);
 		}
 

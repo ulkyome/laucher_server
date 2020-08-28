@@ -13,324 +13,452 @@
 
 		private void InitializeComponent()
 		{
-			this.components = new global::System.ComponentModel.Container();
-			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage.ProcessPropertyForm));
-			this.checkBoxAutomaticStart = new global::System.Windows.Forms.CheckBox();
-			this.checkBoxUse = new global::System.Windows.Forms.CheckBox();
-			this.checkBoxRunOnce = new global::System.Windows.Forms.CheckBox();
-			this.textBoxUpdateFileArgs = new global::System.Windows.Forms.TextBox();
-			this.textBoxUpdateFileName = new global::System.Windows.Forms.TextBox();
-			this.textBoxStandardOutLogLines = new global::System.Windows.Forms.TextBox();
-			this.textBoxExecuteFileArgs = new global::System.Windows.Forms.TextBox();
-			this.textBoxExecuteFileName = new global::System.Windows.Forms.TextBox();
-			this.textBoxWorkingDirectory = new global::System.Windows.Forms.TextBox();
-			this.textBoxDescription = new global::System.Windows.Forms.TextBox();
-			this.comboBoxName = new global::System.Windows.Forms.ComboBox();
-			this.textBoxType = new global::System.Windows.Forms.TextBox();
-			this.labelName = new global::System.Windows.Forms.Label();
-			this.labelDescription = new global::System.Windows.Forms.Label();
-			this.labelWorkingDirectory = new global::System.Windows.Forms.Label();
-			this.labelExecuteFile = new global::System.Windows.Forms.Label();
-			this.labelUpdateFile = new global::System.Windows.Forms.Label();
-			this.labelStandardOutLogLines = new global::System.Windows.Forms.Label();
-			this.groupBoxBasicProperty = new global::System.Windows.Forms.GroupBox();
-			this.labelType = new global::System.Windows.Forms.Label();
-			this.groupBoxFileProperty = new global::System.Windows.Forms.GroupBox();
-			this.groupBoxEtcProperty = new global::System.Windows.Forms.GroupBox();
-			this.checkBoxPerformance = new global::System.Windows.Forms.CheckBox();
-			this.buttonOK = new global::System.Windows.Forms.Button();
-			this.buttonCancel = new global::System.Windows.Forms.Button();
-			this.toolTipProperty = new global::System.Windows.Forms.ToolTip(this.components);
-			this.BtnDetail = new global::System.Windows.Forms.Button();
-			this.groupBoxSchedule = new global::System.Windows.Forms.GroupBox();
-			this.buttonScheduleAdd = new global::System.Windows.Forms.Button();
-			this.buttonScheduleSub = new global::System.Windows.Forms.Button();
-			this.listViewSchedule = new global::System.Windows.Forms.ListView();
-			this.columnHeader1 = new global::System.Windows.Forms.ColumnHeader();
-			this.columnHeader2 = new global::System.Windows.Forms.ColumnHeader();
-			this.columnHeader3 = new global::System.Windows.Forms.ColumnHeader();
-			this.columnHeader4 = new global::System.Windows.Forms.ColumnHeader();
-			this.imageList1 = new global::System.Windows.Forms.ImageList(this.components);
-			this.groupBoxBasicProperty.SuspendLayout();
-			this.groupBoxFileProperty.SuspendLayout();
-			this.groupBoxEtcProperty.SuspendLayout();
-			this.groupBoxSchedule.SuspendLayout();
-			base.SuspendLayout();
-			this.checkBoxAutomaticStart.Location = new global::System.Drawing.Point(8, 64);
-			this.checkBoxAutomaticStart.Name = "checkBoxAutomaticStart";
-			this.checkBoxAutomaticStart.Size = new global::System.Drawing.Size(408, 24);
-			this.checkBoxAutomaticStart.TabIndex = 2;
-			this.checkBoxAutomaticStart.Text = "컴퓨터가 켜졌을 때 자동으로 시작";
-			this.toolTipProperty.SetToolTip(this.checkBoxAutomaticStart, "컴퓨터가 특별한 이유에 의해 다시 켜졌을 때 사용자의 명령을 기다리지 않고 바로 시작을 원할 경우 이 옵션을 켭니다.");
-			this.checkBoxUse.Location = new global::System.Drawing.Point(8, 44);
-			this.checkBoxUse.Name = "checkBoxUse";
-			this.checkBoxUse.Size = new global::System.Drawing.Size(200, 24);
-			this.checkBoxUse.TabIndex = 1;
-			this.checkBoxUse.Text = "프로그램 사용 활성화";
-			this.toolTipProperty.SetToolTip(this.checkBoxUse, "이 옵션을 끄면 작업그룹을 선택할 때 기본으로 선택되지 않고, '연속 실행/종료' 시에도 포함되지 않습니다.");
-			this.checkBoxRunOnce.Location = new global::System.Drawing.Point(226, 44);
-			this.checkBoxRunOnce.Name = "checkBoxRunOnce";
-			this.checkBoxRunOnce.Size = new global::System.Drawing.Size(190, 24);
-			this.checkBoxRunOnce.TabIndex = 0;
-			this.checkBoxRunOnce.Text = "프로그램 종료시 자동 재시작";
-			this.toolTipProperty.SetToolTip(this.checkBoxRunOnce, "종료 명령을 내리지 않고, 프로그램이 스스로 종료되었을 시, 자동으로 다시 시작시켜줄지를 결정합니다. 24시간 실행되고 있어야 해서 설령 프로그램 크래시가 나도 자동으로 재시작해야 할 경우 체크합니다.");
-			this.textBoxUpdateFileArgs.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxUpdateFileArgs.Location = new global::System.Drawing.Point(256, 101);
-			this.textBoxUpdateFileArgs.MaxLength = 256;
-			this.textBoxUpdateFileArgs.Name = "textBoxUpdateFileArgs";
-			this.textBoxUpdateFileArgs.Size = new global::System.Drawing.Size(160, 21);
-			this.textBoxUpdateFileArgs.TabIndex = 4;
-			this.toolTipProperty.SetToolTip(this.textBoxUpdateFileArgs, "업데이트 파일의 인자입니다.");
-			this.textBoxUpdateFileName.Location = new global::System.Drawing.Point(120, 101);
-			this.textBoxUpdateFileName.MaxLength = 32;
-			this.textBoxUpdateFileName.Name = "textBoxUpdateFileName";
-			this.textBoxUpdateFileName.Size = new global::System.Drawing.Size(136, 21);
-			this.textBoxUpdateFileName.TabIndex = 3;
-			this.toolTipProperty.SetToolTip(this.textBoxUpdateFileName, "업데이트를 필요로 할 때 실행되는 파일입니다.");
-			this.textBoxStandardOutLogLines.Location = new global::System.Drawing.Point(124, 20);
-			this.textBoxStandardOutLogLines.MaxLength = 4;
-			this.textBoxStandardOutLogLines.Name = "textBoxStandardOutLogLines";
-			this.textBoxStandardOutLogLines.Size = new global::System.Drawing.Size(136, 21);
-			this.textBoxStandardOutLogLines.TabIndex = 0;
-			this.toolTipProperty.SetToolTip(this.textBoxStandardOutLogLines, "기억할 프로그램의 로그라인 수입니다. 10~1000까지의 값을 가질 수 있으며, 통상 100줄을 기억합니다.");
-			this.textBoxExecuteFileArgs.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxExecuteFileArgs.Location = new global::System.Drawing.Point(120, 70);
-			this.textBoxExecuteFileArgs.MaxLength = 256;
-			this.textBoxExecuteFileArgs.Name = "textBoxExecuteFileArgs";
-			this.textBoxExecuteFileArgs.Size = new global::System.Drawing.Size(296, 21);
-			this.textBoxExecuteFileArgs.TabIndex = 2;
-			this.toolTipProperty.SetToolTip(this.textBoxExecuteFileArgs, "실행 파일의 인자입니다.");
-			this.textBoxExecuteFileName.Location = new global::System.Drawing.Point(120, 46);
-			this.textBoxExecuteFileName.MaxLength = 32;
-			this.textBoxExecuteFileName.Name = "textBoxExecuteFileName";
-			this.textBoxExecuteFileName.Size = new global::System.Drawing.Size(296, 21);
-			this.textBoxExecuteFileName.TabIndex = 1;
-			this.toolTipProperty.SetToolTip(this.textBoxExecuteFileName, "실행파일의 이름입니다.");
-			this.textBoxWorkingDirectory.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxWorkingDirectory.Location = new global::System.Drawing.Point(120, 16);
-			this.textBoxWorkingDirectory.MaxLength = 32;
-			this.textBoxWorkingDirectory.Name = "textBoxWorkingDirectory";
-			this.textBoxWorkingDirectory.Size = new global::System.Drawing.Size(296, 21);
-			this.textBoxWorkingDirectory.TabIndex = 0;
-			this.toolTipProperty.SetToolTip(this.textBoxWorkingDirectory, "실행 파일이 실행되는 작업 디렉토리 입니다. 상대적인 디렉토리를 입력합니다.");
-			this.textBoxDescription.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxDescription.Location = new global::System.Drawing.Point(120, 68);
-			this.textBoxDescription.MaxLength = 256;
-			this.textBoxDescription.Name = "textBoxDescription";
-			this.textBoxDescription.Size = new global::System.Drawing.Size(296, 21);
-			this.textBoxDescription.TabIndex = 1;
-			this.toolTipProperty.SetToolTip(this.textBoxDescription, "프로그램의 설명을 입력합니다. 화면에 표시하거나 작업 그룹을 나누는데 쓰이는 기준입니다.");
-			this.comboBoxName.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.comboBoxName.Location = new global::System.Drawing.Point(120, 16);
-			this.comboBoxName.MaxLength = 32;
-			this.comboBoxName.Name = "comboBoxName";
-			this.comboBoxName.Size = new global::System.Drawing.Size(296, 20);
-			this.comboBoxName.TabIndex = 0;
-			this.toolTipProperty.SetToolTip(this.comboBoxName, "프로그램의 대표 이름을 입력합니다. 새 프로그램을 등록할 경우 템플릿 목록에서 고를 수 있습니다.");
-			this.comboBoxName.SelectedIndexChanged += new global::System.EventHandler(this.comboBoxName_SelectedIndexChanged);
-			this.textBoxType.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxType.Location = new global::System.Drawing.Point(120, 42);
-			this.textBoxType.MaxLength = 32;
-			this.textBoxType.Name = "textBoxType";
-			this.textBoxType.Size = new global::System.Drawing.Size(296, 21);
-			this.textBoxType.TabIndex = 0;
-			this.toolTipProperty.SetToolTip(this.textBoxType, "프로그램의 타입을 입력합니다. 타입이 같은 프로그램은 이름이 달라도 같은 프로그램으로 취급하여 동시 작업 명령이 가능합니다.");
-			this.labelName.Location = new global::System.Drawing.Point(8, 16);
-			this.labelName.Name = "labelName";
-			this.labelName.Size = new global::System.Drawing.Size(112, 24);
-			this.labelName.TabIndex = 34;
-			this.labelName.Text = "프로그램 이름";
-			this.labelName.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelDescription.Location = new global::System.Drawing.Point(8, 68);
-			this.labelDescription.Name = "labelDescription";
-			this.labelDescription.Size = new global::System.Drawing.Size(112, 24);
-			this.labelDescription.TabIndex = 34;
-			this.labelDescription.Text = "프로그램 설명";
-			this.labelDescription.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelWorkingDirectory.Location = new global::System.Drawing.Point(8, 16);
-			this.labelWorkingDirectory.Name = "labelWorkingDirectory";
-			this.labelWorkingDirectory.Size = new global::System.Drawing.Size(112, 24);
-			this.labelWorkingDirectory.TabIndex = 34;
-			this.labelWorkingDirectory.Text = "작업 디렉토리";
-			this.labelWorkingDirectory.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelExecuteFile.Location = new global::System.Drawing.Point(8, 46);
-			this.labelExecuteFile.Name = "labelExecuteFile";
-			this.labelExecuteFile.Size = new global::System.Drawing.Size(112, 24);
-			this.labelExecuteFile.TabIndex = 34;
-			this.labelExecuteFile.Text = "실행 파일";
-			this.labelExecuteFile.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelUpdateFile.Location = new global::System.Drawing.Point(8, 101);
-			this.labelUpdateFile.Name = "labelUpdateFile";
-			this.labelUpdateFile.Size = new global::System.Drawing.Size(112, 24);
-			this.labelUpdateFile.TabIndex = 34;
-			this.labelUpdateFile.Text = "업데이트 파일";
-			this.labelUpdateFile.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.labelStandardOutLogLines.Location = new global::System.Drawing.Point(8, 20);
-			this.labelStandardOutLogLines.Name = "labelStandardOutLogLines";
-			this.labelStandardOutLogLines.Size = new global::System.Drawing.Size(122, 24);
-			this.labelStandardOutLogLines.TabIndex = 34;
-			this.labelStandardOutLogLines.Text = "기억할 로그 라인 수";
-			this.labelStandardOutLogLines.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.groupBoxBasicProperty.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.groupBoxBasicProperty.Controls.Add(this.labelType);
-			this.groupBoxBasicProperty.Controls.Add(this.labelDescription);
-			this.groupBoxBasicProperty.Controls.Add(this.labelName);
-			this.groupBoxBasicProperty.Controls.Add(this.comboBoxName);
-			this.groupBoxBasicProperty.Controls.Add(this.textBoxType);
-			this.groupBoxBasicProperty.Controls.Add(this.textBoxDescription);
-			this.groupBoxBasicProperty.Location = new global::System.Drawing.Point(8, 10);
-			this.groupBoxBasicProperty.Name = "groupBoxBasicProperty";
-			this.groupBoxBasicProperty.Size = new global::System.Drawing.Size(424, 92);
-			this.groupBoxBasicProperty.TabIndex = 0;
-			this.groupBoxBasicProperty.TabStop = false;
-			this.groupBoxBasicProperty.Text = "기본 속성";
-			this.toolTipProperty.SetToolTip(this.groupBoxBasicProperty, "프로그램의 기본 속성을 설정합니다.");
-			this.labelType.Location = new global::System.Drawing.Point(8, 42);
-			this.labelType.Name = "labelType";
-			this.labelType.Size = new global::System.Drawing.Size(112, 24);
-			this.labelType.TabIndex = 35;
-			this.labelType.Text = "프로그램 타입";
-			this.labelType.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
-			this.groupBoxFileProperty.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.groupBoxFileProperty.Controls.Add(this.textBoxExecuteFileArgs);
-			this.groupBoxFileProperty.Controls.Add(this.textBoxUpdateFileArgs);
-			this.groupBoxFileProperty.Controls.Add(this.textBoxWorkingDirectory);
-			this.groupBoxFileProperty.Controls.Add(this.textBoxExecuteFileName);
-			this.groupBoxFileProperty.Controls.Add(this.labelExecuteFile);
-			this.groupBoxFileProperty.Controls.Add(this.labelUpdateFile);
-			this.groupBoxFileProperty.Controls.Add(this.textBoxUpdateFileName);
-			this.groupBoxFileProperty.Controls.Add(this.labelWorkingDirectory);
-			this.groupBoxFileProperty.Location = new global::System.Drawing.Point(8, 108);
-			this.groupBoxFileProperty.Name = "groupBoxFileProperty";
-			this.groupBoxFileProperty.Size = new global::System.Drawing.Size(424, 128);
-			this.groupBoxFileProperty.TabIndex = 1;
-			this.groupBoxFileProperty.TabStop = false;
-			this.groupBoxFileProperty.Text = "실행 파일 관련 정보";
-			this.toolTipProperty.SetToolTip(this.groupBoxFileProperty, "프로그램과 관련된 파일에 대한 설정을 합니다.");
-			this.groupBoxEtcProperty.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.groupBoxEtcProperty.Controls.Add(this.checkBoxPerformance);
-			this.groupBoxEtcProperty.Controls.Add(this.checkBoxRunOnce);
-			this.groupBoxEtcProperty.Controls.Add(this.checkBoxAutomaticStart);
-			this.groupBoxEtcProperty.Controls.Add(this.checkBoxUse);
-			this.groupBoxEtcProperty.Controls.Add(this.textBoxStandardOutLogLines);
-			this.groupBoxEtcProperty.Controls.Add(this.labelStandardOutLogLines);
-			this.groupBoxEtcProperty.Location = new global::System.Drawing.Point(12, 426);
-			this.groupBoxEtcProperty.Name = "groupBoxEtcProperty";
-			this.groupBoxEtcProperty.Size = new global::System.Drawing.Size(420, 94);
-			this.groupBoxEtcProperty.TabIndex = 4;
-			this.groupBoxEtcProperty.TabStop = false;
-			this.groupBoxEtcProperty.Text = "기타 정보";
-			this.toolTipProperty.SetToolTip(this.groupBoxEtcProperty, "기타 정보를 설정합니다.");
-			this.checkBoxPerformance.AutoSize = true;
-			this.checkBoxPerformance.Location = new global::System.Drawing.Point(226, 68);
-			this.checkBoxPerformance.Name = "checkBoxPerformance";
-			this.checkBoxPerformance.Size = new global::System.Drawing.Size(171, 16);
-			this.checkBoxPerformance.TabIndex = 35;
-			this.checkBoxPerformance.Text = "메모리/CPU 성능 모니터링";
-			this.checkBoxPerformance.UseVisualStyleBackColor = true;
-			this.buttonOK.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
-			this.buttonOK.DialogResult = global::System.Windows.Forms.DialogResult.OK;
-			this.buttonOK.Location = new global::System.Drawing.Point(87, 529);
-			this.buttonOK.Name = "buttonOK";
-			this.buttonOK.Size = new global::System.Drawing.Size(104, 24);
-			this.buttonOK.TabIndex = 5;
-			this.buttonOK.Text = "확인";
-			this.buttonOK.Click += new global::System.EventHandler(this.buttonOK_Click);
-			this.buttonCancel.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
-			this.buttonCancel.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
-			this.buttonCancel.Location = new global::System.Drawing.Point(197, 529);
-			this.buttonCancel.Name = "buttonCancel";
-			this.buttonCancel.Size = new global::System.Drawing.Size(104, 24);
-			this.buttonCancel.TabIndex = 6;
-			this.buttonCancel.Text = "취소";
-			this.BtnDetail.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
-			this.BtnDetail.Location = new global::System.Drawing.Point(357, 530);
-			this.BtnDetail.Name = "BtnDetail";
-			this.BtnDetail.Size = new global::System.Drawing.Size(75, 23);
-			this.BtnDetail.TabIndex = 7;
-			this.BtnDetail.Text = ">>";
-			this.BtnDetail.UseVisualStyleBackColor = true;
-			this.BtnDetail.Click += new global::System.EventHandler(this.BtnDetail_Click);
-			this.groupBoxSchedule.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.groupBoxSchedule.Controls.Add(this.buttonScheduleAdd);
-			this.groupBoxSchedule.Controls.Add(this.buttonScheduleSub);
-			this.groupBoxSchedule.Controls.Add(this.listViewSchedule);
-			this.groupBoxSchedule.Location = new global::System.Drawing.Point(12, 242);
-			this.groupBoxSchedule.Name = "groupBoxSchedule";
-			this.groupBoxSchedule.Size = new global::System.Drawing.Size(420, 178);
-			this.groupBoxSchedule.TabIndex = 8;
-			this.groupBoxSchedule.TabStop = false;
-			this.groupBoxSchedule.Text = "스케쥴러";
-			this.buttonScheduleAdd.Location = new global::System.Drawing.Point(6, 20);
-			this.buttonScheduleAdd.Name = "buttonScheduleAdd";
-			this.buttonScheduleAdd.Size = new global::System.Drawing.Size(24, 24);
-			this.buttonScheduleAdd.TabIndex = 6;
-			this.buttonScheduleAdd.Text = "＋";
-			this.buttonScheduleAdd.Click += new global::System.EventHandler(this.buttonScheduleAdd_Click);
-			this.buttonScheduleSub.Location = new global::System.Drawing.Point(6, 44);
-			this.buttonScheduleSub.Name = "buttonScheduleSub";
-			this.buttonScheduleSub.Size = new global::System.Drawing.Size(24, 24);
-			this.buttonScheduleSub.TabIndex = 7;
-			this.buttonScheduleSub.Text = "－";
-			this.buttonScheduleSub.Click += new global::System.EventHandler(this.buttonScheduleSub_Click);
-			this.listViewSchedule.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.listViewSchedule.Columns.AddRange(new global::System.Windows.Forms.ColumnHeader[]
-			{
-				this.columnHeader1,
-				this.columnHeader2,
-				this.columnHeader3,
-				this.columnHeader4
-			});
-			this.listViewSchedule.FullRowSelect = true;
-			this.listViewSchedule.GridLines = true;
-			this.listViewSchedule.Location = new global::System.Drawing.Point(36, 20);
-			this.listViewSchedule.MultiSelect = false;
-			this.listViewSchedule.Name = "listViewSchedule";
-			this.listViewSchedule.Size = new global::System.Drawing.Size(376, 152);
-			this.listViewSchedule.StateImageList = this.imageList1;
-			this.listViewSchedule.TabIndex = 0;
-			this.listViewSchedule.UseCompatibleStateImageBehavior = false;
-			this.listViewSchedule.View = global::System.Windows.Forms.View.Details;
-			this.listViewSchedule.DoubleClick += new global::System.EventHandler(this.listViewSchedule_DoubleClick);
-			this.columnHeader1.Text = "";
-			this.columnHeader1.Width = 22;
-			this.columnHeader2.Text = "이름";
-			this.columnHeader2.Width = 52;
-			this.columnHeader3.Text = "실행계획";
-			this.columnHeader3.Width = 64;
-			this.columnHeader4.Text = "명령";
-			this.columnHeader4.Width = 229;
-			this.imageList1.ImageStream = (global::System.Windows.Forms.ImageListStreamer)componentResourceManager.GetObject("imageList1.ImageStream");
-			this.imageList1.TransparentColor = global::System.Drawing.Color.Transparent;
-			this.imageList1.Images.SetKeyName(0, "Enabeld");
-			this.imageList1.Images.SetKeyName(1, "Disabled");
-			base.AcceptButton = this.buttonOK;
-			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 14);
-			base.CancelButton = this.buttonCancel;
-			base.ClientSize = new global::System.Drawing.Size(442, 562);
-			base.Controls.Add(this.groupBoxSchedule);
-			base.Controls.Add(this.BtnDetail);
-			base.Controls.Add(this.buttonOK);
-			base.Controls.Add(this.groupBoxEtcProperty);
-			base.Controls.Add(this.groupBoxFileProperty);
-			base.Controls.Add(this.groupBoxBasicProperty);
-			base.Controls.Add(this.buttonCancel);
-			base.FormBorderStyle = global::System.Windows.Forms.FormBorderStyle.FixedDialog;
-			base.MaximizeBox = false;
-			base.MinimizeBox = false;
-			base.Name = "ProcessPropertyForm";
-			base.ShowInTaskbar = false;
-			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
-			this.Text = "프로그램 상세 정보";
-			base.LocationChanged += new global::System.EventHandler(this.ProcessPropertyForm_LocationChanged);
-			this.groupBoxBasicProperty.ResumeLayout(false);
-			this.groupBoxBasicProperty.PerformLayout();
-			this.groupBoxFileProperty.ResumeLayout(false);
-			this.groupBoxFileProperty.PerformLayout();
-			this.groupBoxEtcProperty.ResumeLayout(false);
-			this.groupBoxEtcProperty.PerformLayout();
-			this.groupBoxSchedule.ResumeLayout(false);
-			base.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProcessPropertyForm));
+            this.checkBoxAutomaticStart = new System.Windows.Forms.CheckBox();
+            this.checkBoxUse = new System.Windows.Forms.CheckBox();
+            this.checkBoxRunOnce = new System.Windows.Forms.CheckBox();
+            this.textBoxUpdateFileArgs = new System.Windows.Forms.TextBox();
+            this.textBoxUpdateFileName = new System.Windows.Forms.TextBox();
+            this.textBoxStandardOutLogLines = new System.Windows.Forms.TextBox();
+            this.textBoxExecuteFileArgs = new System.Windows.Forms.TextBox();
+            this.textBoxExecuteFileName = new System.Windows.Forms.TextBox();
+            this.textBoxWorkingDirectory = new System.Windows.Forms.TextBox();
+            this.textBoxDescription = new System.Windows.Forms.TextBox();
+            this.comboBoxName = new System.Windows.Forms.ComboBox();
+            this.textBoxType = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelDescription = new System.Windows.Forms.Label();
+            this.labelWorkingDirectory = new System.Windows.Forms.Label();
+            this.labelExecuteFile = new System.Windows.Forms.Label();
+            this.labelUpdateFile = new System.Windows.Forms.Label();
+            this.labelStandardOutLogLines = new System.Windows.Forms.Label();
+            this.groupBoxBasicProperty = new System.Windows.Forms.GroupBox();
+            this.labelType = new System.Windows.Forms.Label();
+            this.groupBoxFileProperty = new System.Windows.Forms.GroupBox();
+            this.groupBoxEtcProperty = new System.Windows.Forms.GroupBox();
+            this.checkBoxPerformance = new System.Windows.Forms.CheckBox();
+            this.buttonOK = new System.Windows.Forms.Button();
+            this.buttonCancel = new System.Windows.Forms.Button();
+            this.toolTipProperty = new System.Windows.Forms.ToolTip(this.components);
+            this.BtnDetail = new System.Windows.Forms.Button();
+            this.groupBoxSchedule = new System.Windows.Forms.GroupBox();
+            this.buttonScheduleAdd = new System.Windows.Forms.Button();
+            this.buttonScheduleSub = new System.Windows.Forms.Button();
+            this.listViewSchedule = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.groupBoxBasicProperty.SuspendLayout();
+            this.groupBoxFileProperty.SuspendLayout();
+            this.groupBoxEtcProperty.SuspendLayout();
+            this.groupBoxSchedule.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // checkBoxAutomaticStart
+            // 
+            this.checkBoxAutomaticStart.Location = new System.Drawing.Point(7, 59);
+            this.checkBoxAutomaticStart.Name = "checkBoxAutomaticStart";
+            this.checkBoxAutomaticStart.Size = new System.Drawing.Size(340, 23);
+            this.checkBoxAutomaticStart.TabIndex = 2;
+            this.checkBoxAutomaticStart.Text = "Autostart on boot up of pc";
+            this.toolTipProperty.SetToolTip(this.checkBoxAutomaticStart, "Turn on this option if you want the computer to start up immediately when it is t" +
+        "urned on again for some reason without waiting for a user command.");
+            // 
+            // checkBoxUse
+            // 
+            this.checkBoxUse.Location = new System.Drawing.Point(7, 41);
+            this.checkBoxUse.Name = "checkBoxUse";
+            this.checkBoxUse.Size = new System.Drawing.Size(166, 22);
+            this.checkBoxUse.TabIndex = 1;
+            this.checkBoxUse.Text = "Activate program use";
+            this.toolTipProperty.SetToolTip(this.checkBoxUse, "When this option is off, it is not selected by default when selecting a workgroup" +
+        ", and it is not included in \'Continuous Run/Shutdown\'..");
+            // 
+            // checkBoxRunOnce
+            // 
+            this.checkBoxRunOnce.Location = new System.Drawing.Point(188, 41);
+            this.checkBoxRunOnce.Name = "checkBoxRunOnce";
+            this.checkBoxRunOnce.Size = new System.Drawing.Size(159, 22);
+            this.checkBoxRunOnce.TabIndex = 0;
+            this.checkBoxRunOnce.Text = "Automatic restart at program termination";
+            this.toolTipProperty.SetToolTip(this.checkBoxRunOnce, resources.GetString("checkBoxRunOnce.ToolTip"));
+            // 
+            // textBoxUpdateFileArgs
+            // 
+            this.textBoxUpdateFileArgs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxUpdateFileArgs.Location = new System.Drawing.Point(213, 94);
+            this.textBoxUpdateFileArgs.MaxLength = 256;
+            this.textBoxUpdateFileArgs.Name = "textBoxUpdateFileArgs";
+            this.textBoxUpdateFileArgs.Size = new System.Drawing.Size(208, 20);
+            this.textBoxUpdateFileArgs.TabIndex = 4;
+            this.toolTipProperty.SetToolTip(this.textBoxUpdateFileArgs, "Is the argument of the update file.");
+            // 
+            // textBoxUpdateFileName
+            // 
+            this.textBoxUpdateFileName.Location = new System.Drawing.Point(100, 94);
+            this.textBoxUpdateFileName.MaxLength = 32;
+            this.textBoxUpdateFileName.Name = "textBoxUpdateFileName";
+            this.textBoxUpdateFileName.Size = new System.Drawing.Size(113, 20);
+            this.textBoxUpdateFileName.TabIndex = 3;
+            this.toolTipProperty.SetToolTip(this.textBoxUpdateFileName, "This is the file that is executed when an update is required.");
+            // 
+            // textBoxStandardOutLogLines
+            // 
+            this.textBoxStandardOutLogLines.Location = new System.Drawing.Point(103, 19);
+            this.textBoxStandardOutLogLines.MaxLength = 4;
+            this.textBoxStandardOutLogLines.Name = "textBoxStandardOutLogLines";
+            this.textBoxStandardOutLogLines.Size = new System.Drawing.Size(114, 20);
+            this.textBoxStandardOutLogLines.TabIndex = 0;
+            this.toolTipProperty.SetToolTip(this.textBoxStandardOutLogLines, "The number of log lines of the program to remember. It can have a value from 10 to 1000, and usually remembers 100 lines..");
+            // 
+            // textBoxExecuteFileArgs
+            // 
+            this.textBoxExecuteFileArgs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxExecuteFileArgs.Location = new System.Drawing.Point(100, 65);
+            this.textBoxExecuteFileArgs.MaxLength = 256;
+            this.textBoxExecuteFileArgs.Name = "textBoxExecuteFileArgs";
+            this.textBoxExecuteFileArgs.Size = new System.Drawing.Size(321, 20);
+            this.textBoxExecuteFileArgs.TabIndex = 2;
+            this.toolTipProperty.SetToolTip(this.textBoxExecuteFileArgs, "Is the argument of the executable file.");
+            this.textBoxExecuteFileArgs.TextChanged += new System.EventHandler(this.textBoxExecuteFileArgs_TextChanged);
+            // 
+            // textBoxExecuteFileName
+            // 
+            this.textBoxExecuteFileName.Location = new System.Drawing.Point(100, 43);
+            this.textBoxExecuteFileName.MaxLength = 32;
+            this.textBoxExecuteFileName.Name = "textBoxExecuteFileName";
+            this.textBoxExecuteFileName.Size = new System.Drawing.Size(247, 20);
+            this.textBoxExecuteFileName.TabIndex = 1;
+            this.toolTipProperty.SetToolTip(this.textBoxExecuteFileName, "The name of the executable file.");
+            // 
+            // textBoxWorkingDirectory
+            // 
+            this.textBoxWorkingDirectory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxWorkingDirectory.Location = new System.Drawing.Point(100, 15);
+            this.textBoxWorkingDirectory.MaxLength = 256;
+            this.textBoxWorkingDirectory.Name = "textBoxWorkingDirectory";
+            this.textBoxWorkingDirectory.Size = new System.Drawing.Size(321, 20);
+            this.textBoxWorkingDirectory.TabIndex = 0;
+            this.toolTipProperty.SetToolTip(this.textBoxWorkingDirectory, "This is the working directory where the executable file is run. Enter relative di" +
+        "rectory.");
+            this.textBoxWorkingDirectory.TextChanged += new System.EventHandler(this.textBoxWorkingDirectory_TextChanged);
+            // 
+            // textBoxDescription
+            // 
+            this.textBoxDescription.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxDescription.Location = new System.Drawing.Point(100, 63);
+            this.textBoxDescription.MaxLength = 256;
+            this.textBoxDescription.Name = "textBoxDescription";
+            this.textBoxDescription.Size = new System.Drawing.Size(321, 20);
+            this.textBoxDescription.TabIndex = 1;
+            this.toolTipProperty.SetToolTip(this.textBoxDescription, "Enter a description of the program. It is a standard used to display on the scree" +
+        "n or to divide work groups..");
+            // 
+            // comboBoxName
+            // 
+            this.comboBoxName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxName.Location = new System.Drawing.Point(100, 15);
+            this.comboBoxName.MaxLength = 32;
+            this.comboBoxName.Name = "comboBoxName";
+            this.comboBoxName.Size = new System.Drawing.Size(321, 21);
+            this.comboBoxName.TabIndex = 0;
+            this.toolTipProperty.SetToolTip(this.comboBoxName, "Enter the program\'s representative name. When registering a new program, you can " +
+        "choose from a list of templates.");
+            this.comboBoxName.SelectedIndexChanged += new System.EventHandler(this.comboBoxName_SelectedIndexChanged);
+            // 
+            // textBoxType
+            // 
+            this.textBoxType.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxType.Location = new System.Drawing.Point(100, 39);
+            this.textBoxType.MaxLength = 32;
+            this.textBoxType.Name = "textBoxType";
+            this.textBoxType.Size = new System.Drawing.Size(321, 20);
+            this.textBoxType.TabIndex = 0;
+            this.toolTipProperty.SetToolTip(this.textBoxType, "Enter the program type. Programs of the same type are treated as the same program" +
+        " even with different names, allowing simultaneous operation instructions..");
+            // 
+            // labelName
+            // 
+            this.labelName.Location = new System.Drawing.Point(7, 15);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(93, 22);
+            this.labelName.TabIndex = 34;
+            this.labelName.Text = "Program name";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelDescription
+            // 
+            this.labelDescription.Location = new System.Drawing.Point(7, 63);
+            this.labelDescription.Name = "labelDescription";
+            this.labelDescription.Size = new System.Drawing.Size(93, 22);
+            this.labelDescription.TabIndex = 34;
+            this.labelDescription.Text = "Program description";
+            this.labelDescription.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelWorkingDirectory
+            // 
+            this.labelWorkingDirectory.Location = new System.Drawing.Point(7, 15);
+            this.labelWorkingDirectory.Name = "labelWorkingDirectory";
+            this.labelWorkingDirectory.Size = new System.Drawing.Size(93, 22);
+            this.labelWorkingDirectory.TabIndex = 34;
+            this.labelWorkingDirectory.Text = "Working directory";
+            this.labelWorkingDirectory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelExecuteFile
+            // 
+            this.labelExecuteFile.Location = new System.Drawing.Point(7, 43);
+            this.labelExecuteFile.Name = "labelExecuteFile";
+            this.labelExecuteFile.Size = new System.Drawing.Size(93, 22);
+            this.labelExecuteFile.TabIndex = 34;
+            this.labelExecuteFile.Text = "Executable file";
+            this.labelExecuteFile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelUpdateFile
+            // 
+            this.labelUpdateFile.Location = new System.Drawing.Point(7, 94);
+            this.labelUpdateFile.Name = "labelUpdateFile";
+            this.labelUpdateFile.Size = new System.Drawing.Size(93, 22);
+            this.labelUpdateFile.TabIndex = 34;
+            this.labelUpdateFile.Text = "Update file";
+            this.labelUpdateFile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelStandardOutLogLines
+            // 
+            this.labelStandardOutLogLines.Location = new System.Drawing.Point(7, 19);
+            this.labelStandardOutLogLines.Name = "labelStandardOutLogLines";
+            this.labelStandardOutLogLines.Size = new System.Drawing.Size(101, 22);
+            this.labelStandardOutLogLines.TabIndex = 34;
+            this.labelStandardOutLogLines.Text = "Number of log lines to remember";
+            this.labelStandardOutLogLines.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // groupBoxBasicProperty
+            // 
+            this.groupBoxBasicProperty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxBasicProperty.Controls.Add(this.labelType);
+            this.groupBoxBasicProperty.Controls.Add(this.labelDescription);
+            this.groupBoxBasicProperty.Controls.Add(this.labelName);
+            this.groupBoxBasicProperty.Controls.Add(this.comboBoxName);
+            this.groupBoxBasicProperty.Controls.Add(this.textBoxType);
+            this.groupBoxBasicProperty.Controls.Add(this.textBoxDescription);
+            this.groupBoxBasicProperty.Location = new System.Drawing.Point(7, 9);
+            this.groupBoxBasicProperty.Name = "groupBoxBasicProperty";
+            this.groupBoxBasicProperty.Size = new System.Drawing.Size(427, 86);
+            this.groupBoxBasicProperty.TabIndex = 0;
+            this.groupBoxBasicProperty.TabStop = false;
+            this.groupBoxBasicProperty.Text = "Basic attribute";
+            this.toolTipProperty.SetToolTip(this.groupBoxBasicProperty, "Set the basic properties of the program.");
+            // 
+            // labelType
+            // 
+            this.labelType.Location = new System.Drawing.Point(7, 39);
+            this.labelType.Name = "labelType";
+            this.labelType.Size = new System.Drawing.Size(93, 22);
+            this.labelType.TabIndex = 35;
+            this.labelType.Text = "Program type";
+            this.labelType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // groupBoxFileProperty
+            // 
+            this.groupBoxFileProperty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxFileProperty.Controls.Add(this.textBoxExecuteFileArgs);
+            this.groupBoxFileProperty.Controls.Add(this.textBoxUpdateFileArgs);
+            this.groupBoxFileProperty.Controls.Add(this.textBoxWorkingDirectory);
+            this.groupBoxFileProperty.Controls.Add(this.textBoxExecuteFileName);
+            this.groupBoxFileProperty.Controls.Add(this.labelExecuteFile);
+            this.groupBoxFileProperty.Controls.Add(this.labelUpdateFile);
+            this.groupBoxFileProperty.Controls.Add(this.textBoxUpdateFileName);
+            this.groupBoxFileProperty.Controls.Add(this.labelWorkingDirectory);
+            this.groupBoxFileProperty.Location = new System.Drawing.Point(7, 100);
+            this.groupBoxFileProperty.Name = "groupBoxFileProperty";
+            this.groupBoxFileProperty.Size = new System.Drawing.Size(427, 119);
+            this.groupBoxFileProperty.TabIndex = 1;
+            this.groupBoxFileProperty.TabStop = false;
+            this.groupBoxFileProperty.Text = "Information about executable files";
+            this.toolTipProperty.SetToolTip(this.groupBoxFileProperty, "You can set the files related to the program.");
+            // 
+            // groupBoxEtcProperty
+            // 
+            this.groupBoxEtcProperty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxEtcProperty.Controls.Add(this.checkBoxPerformance);
+            this.groupBoxEtcProperty.Controls.Add(this.checkBoxRunOnce);
+            this.groupBoxEtcProperty.Controls.Add(this.checkBoxAutomaticStart);
+            this.groupBoxEtcProperty.Controls.Add(this.checkBoxUse);
+            this.groupBoxEtcProperty.Controls.Add(this.textBoxStandardOutLogLines);
+            this.groupBoxEtcProperty.Controls.Add(this.labelStandardOutLogLines);
+            this.groupBoxEtcProperty.Location = new System.Drawing.Point(10, 436);
+            this.groupBoxEtcProperty.Name = "groupBoxEtcProperty";
+            this.groupBoxEtcProperty.Size = new System.Drawing.Size(424, 87);
+            this.groupBoxEtcProperty.TabIndex = 4;
+            this.groupBoxEtcProperty.TabStop = false;
+            this.groupBoxEtcProperty.Text = "Other information";
+            this.toolTipProperty.SetToolTip(this.groupBoxEtcProperty, "Set other information.");
+            // 
+            // checkBoxPerformance
+            // 
+            this.checkBoxPerformance.AutoSize = true;
+            this.checkBoxPerformance.Location = new System.Drawing.Point(188, 63);
+            this.checkBoxPerformance.Name = "checkBoxPerformance";
+            this.checkBoxPerformance.Size = new System.Drawing.Size(203, 17);
+            this.checkBoxPerformance.TabIndex = 35;
+            this.checkBoxPerformance.Text = "Memory/CPU performance monitoring";
+            this.checkBoxPerformance.UseVisualStyleBackColor = true;
+            // 
+            // buttonOK
+            // 
+            this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.buttonOK.Location = new System.Drawing.Point(146, 531);
+            this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Size = new System.Drawing.Size(87, 22);
+            this.buttonOK.TabIndex = 5;
+            this.buttonOK.Text = "Confirm";
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
+            // 
+            // buttonCancel
+            // 
+            this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonCancel.Location = new System.Drawing.Point(238, 531);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(87, 22);
+            this.buttonCancel.TabIndex = 6;
+            this.buttonCancel.Text = "Cancel";
+            // 
+            // BtnDetail
+            // 
+            this.BtnDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnDetail.Location = new System.Drawing.Point(371, 532);
+            this.BtnDetail.Name = "BtnDetail";
+            this.BtnDetail.Size = new System.Drawing.Size(63, 21);
+            this.BtnDetail.TabIndex = 7;
+            this.BtnDetail.Text = ">>";
+            this.BtnDetail.UseVisualStyleBackColor = true;
+            this.BtnDetail.Click += new System.EventHandler(this.BtnDetail_Click);
+            // 
+            // groupBoxSchedule
+            // 
+            this.groupBoxSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxSchedule.Controls.Add(this.buttonScheduleAdd);
+            this.groupBoxSchedule.Controls.Add(this.buttonScheduleSub);
+            this.groupBoxSchedule.Controls.Add(this.listViewSchedule);
+            this.groupBoxSchedule.Location = new System.Drawing.Point(10, 225);
+            this.groupBoxSchedule.Name = "groupBoxSchedule";
+            this.groupBoxSchedule.Size = new System.Drawing.Size(424, 205);
+            this.groupBoxSchedule.TabIndex = 8;
+            this.groupBoxSchedule.TabStop = false;
+            this.groupBoxSchedule.Text = "Scheduler";
+            // 
+            // buttonScheduleAdd
+            // 
+            this.buttonScheduleAdd.Location = new System.Drawing.Point(5, 19);
+            this.buttonScheduleAdd.Name = "buttonScheduleAdd";
+            this.buttonScheduleAdd.Size = new System.Drawing.Size(20, 22);
+            this.buttonScheduleAdd.TabIndex = 6;
+            this.buttonScheduleAdd.Text = "＋";
+            this.buttonScheduleAdd.Click += new System.EventHandler(this.buttonScheduleAdd_Click);
+            // 
+            // buttonScheduleSub
+            // 
+            this.buttonScheduleSub.Location = new System.Drawing.Point(5, 41);
+            this.buttonScheduleSub.Name = "buttonScheduleSub";
+            this.buttonScheduleSub.Size = new System.Drawing.Size(20, 22);
+            this.buttonScheduleSub.TabIndex = 7;
+            this.buttonScheduleSub.Text = "－";
+            this.buttonScheduleSub.Click += new System.EventHandler(this.buttonScheduleSub_Click);
+            // 
+            // listViewSchedule
+            // 
+            this.listViewSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listViewSchedule.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listViewSchedule.FullRowSelect = true;
+            this.listViewSchedule.GridLines = true;
+            this.listViewSchedule.HideSelection = false;
+            this.listViewSchedule.Location = new System.Drawing.Point(30, 19);
+            this.listViewSchedule.MultiSelect = false;
+            this.listViewSchedule.Name = "listViewSchedule";
+            this.listViewSchedule.Size = new System.Drawing.Size(387, 181);
+            this.listViewSchedule.StateImageList = this.imageList1;
+            this.listViewSchedule.TabIndex = 0;
+            this.listViewSchedule.UseCompatibleStateImageBehavior = false;
+            this.listViewSchedule.View = System.Windows.Forms.View.Details;
+            this.listViewSchedule.DoubleClick += new System.EventHandler(this.listViewSchedule_DoubleClick);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "";
+            this.columnHeader1.Width = 22;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Name";
+            this.columnHeader2.Width = 52;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Action plan";
+            this.columnHeader3.Width = 64;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Command";
+            this.columnHeader4.Width = 229;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // ProcessPropertyForm
+            // 
+            this.AcceptButton = this.buttonOK;
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.CancelButton = this.buttonCancel;
+            this.ClientSize = new System.Drawing.Size(442, 562);
+            this.Controls.Add(this.groupBoxSchedule);
+            this.Controls.Add(this.BtnDetail);
+            this.Controls.Add(this.buttonOK);
+            this.Controls.Add(this.groupBoxEtcProperty);
+            this.Controls.Add(this.groupBoxFileProperty);
+            this.Controls.Add(this.groupBoxBasicProperty);
+            this.Controls.Add(this.buttonCancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "ProcessPropertyForm";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Program details";
+            this.LocationChanged += new System.EventHandler(this.ProcessPropertyForm_LocationChanged);
+            this.groupBoxBasicProperty.ResumeLayout(false);
+            this.groupBoxBasicProperty.PerformLayout();
+            this.groupBoxFileProperty.ResumeLayout(false);
+            this.groupBoxFileProperty.PerformLayout();
+            this.groupBoxEtcProperty.ResumeLayout(false);
+            this.groupBoxEtcProperty.PerformLayout();
+            this.groupBoxSchedule.ResumeLayout(false);
+            this.ResumeLayout(false);
+
 		}
 
 		private global::System.Windows.Forms.GroupBox groupBoxBasicProperty;

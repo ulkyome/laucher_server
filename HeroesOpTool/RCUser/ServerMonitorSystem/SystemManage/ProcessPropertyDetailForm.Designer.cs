@@ -1,5 +1,6 @@
 ﻿namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 {
+
 	public partial class ProcessPropertyDetailForm : global::System.Windows.Forms.Form
 	{
 		protected override void Dispose(bool disposing)
@@ -17,7 +18,7 @@
 			this.groupBoxStandardInProperty = new global::System.Windows.Forms.GroupBox();
 			this.listViewCustomCommand = new global::System.Windows.Forms.ListView();
 			this.columnHeader1 = new global::System.Windows.Forms.ColumnHeader();
-			this.columnHeader2 = new global::System.Windows.Forms.ColumnHeader();
+			
 			this.labelBootedString = new global::System.Windows.Forms.Label();
 			this.textBoxBootedString = new global::System.Windows.Forms.TextBox();
 			this.label1 = new global::System.Windows.Forms.Label();
@@ -46,11 +47,13 @@
 			this.groupBoxChild = new global::System.Windows.Forms.GroupBox();
 			this.textBoxChildProcessLogStr = new global::System.Windows.Forms.TextBox();
 			this.labelChildProcessLogStr = new global::System.Windows.Forms.Label();
+			//this.textBoxMaxChildProcessCount = new global::HeroesOpTool.Utility.NumericTextBox();
 			this.textBoxMaxChildProcessCount = new global::HeroesOpTool.Utility.NumericTextBox();
 			this.labelMaxChildProcessCount = new global::System.Windows.Forms.Label();
 			this.checkBoxTraceChildProcess = new global::System.Windows.Forms.CheckBox();
 			global::System.Windows.Forms.ColumnHeader columnHeader = new global::System.Windows.Forms.ColumnHeader();
-			global::System.Windows.Forms.ColumnHeader columnHeader2 = new global::System.Windows.Forms.ColumnHeader();
+			
+			
 			this.groupBoxStandardInProperty.SuspendLayout();
 			this.groupBoxStandardOutProperty.SuspendLayout();
 			this.groupBoxProperty.SuspendLayout();
@@ -58,8 +61,6 @@
 			base.SuspendLayout();
 			columnHeader.Text = "Key";
 			columnHeader.Width = 151;
-			columnHeader2.Text = "Value";
-			columnHeader2.Width = 216;
 			this.groupBoxStandardInProperty.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
 			this.groupBoxStandardInProperty.Controls.Add(this.listViewCustomCommand);
 			this.groupBoxStandardInProperty.Controls.Add(this.labelBootedString);
@@ -74,13 +75,16 @@
 			this.groupBoxStandardInProperty.Size = new global::System.Drawing.Size(424, 196);
 			this.groupBoxStandardInProperty.TabIndex = 4;
 			this.groupBoxStandardInProperty.TabStop = false;
-			this.groupBoxStandardInProperty.Text = "표준 입력 관련 설정";
+			this.groupBoxStandardInProperty.Text = "Standard input related settings";
 			this.listViewCustomCommand.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.listViewCustomCommand.Columns.AddRange(new global::System.Windows.Forms.ColumnHeader[]
+			this.defComm = new global::System.Windows.Forms.ColumnHeader();
+			/*this.listViewCustomCommand.Columns.AddRange(new global::System.Windows.Forms.ColumnHeader[]
 			{
 				this.columnHeader1,
-				this.columnHeader2
-			});
+				this.defComm
+			});*/
+			this.defComm.Text = "Defined command";
+			this.defComm.Width = 246;
 			this.listViewCustomCommand.FullRowSelect = true;
 			this.listViewCustomCommand.HeaderStyle = global::System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.listViewCustomCommand.HideSelection = false;
@@ -93,15 +97,13 @@
 			this.listViewCustomCommand.UseCompatibleStateImageBehavior = false;
 			this.listViewCustomCommand.View = global::System.Windows.Forms.View.Details;
 			this.listViewCustomCommand.DoubleClick += new global::System.EventHandler(this.ListViewCustomCommand_DoubleClick);
-			this.columnHeader1.Text = "명령 이름";
+			this.columnHeader1.Text = "Command name";
 			this.columnHeader1.Width = 120;
-			this.columnHeader2.Text = "정의된 명령";
-			this.columnHeader2.Width = 246;
 			this.labelBootedString.Location = new global::System.Drawing.Point(8, 16);
 			this.labelBootedString.Name = "labelBootedString";
 			this.labelBootedString.Size = new global::System.Drawing.Size(112, 24);
 			this.labelBootedString.TabIndex = 34;
-			this.labelBootedString.Text = "부팅 완료 출력문";
+			this.labelBootedString.Text = "Boot completion output statement";
 			this.labelBootedString.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.textBoxBootedString.Location = new global::System.Drawing.Point(120, 16);
 			this.textBoxBootedString.MaxLength = 32;
@@ -112,7 +114,7 @@
 			this.label1.Name = "label1";
 			this.label1.Size = new global::System.Drawing.Size(112, 24);
 			this.label1.TabIndex = 34;
-			this.label1.Text = "사용자 정의 입력문";
+			this.label1.Text = "User-defined input statement";
 			this.label1.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.buttonCustomCommandDown.Location = new global::System.Drawing.Point(10, 136);
 			this.buttonCustomCommandDown.Name = "buttonCustomCommandDown";
@@ -154,7 +156,7 @@
 			this.groupBoxStandardOutProperty.Size = new global::System.Drawing.Size(424, 220);
 			this.groupBoxStandardOutProperty.TabIndex = 5;
 			this.groupBoxStandardOutProperty.TabStop = false;
-			this.groupBoxStandardOutProperty.Text = "표준 출력 관련 설정";
+			this.groupBoxStandardOutProperty.Text = "Settings related to standard output";
 			this.buttonPerformanceDescSub.Location = new global::System.Drawing.Point(10, 112);
 			this.buttonPerformanceDescSub.Name = "buttonPerformanceDescSub";
 			this.buttonPerformanceDescSub.Size = new global::System.Drawing.Size(24, 24);
@@ -178,9 +180,9 @@
 			this.listViewPerformanceDescription.UseCompatibleStateImageBehavior = false;
 			this.listViewPerformanceDescription.View = global::System.Windows.Forms.View.Details;
 			this.listViewPerformanceDescription.DoubleClick += new global::System.EventHandler(this.ListViewPerformanceDescription_DoubleClick);
-			this.columnHeader3.Text = "성능 이름";
+			this.columnHeader3.Text = "Performance name";
 			this.columnHeader3.Width = 120;
-			this.columnHeader4.Text = "자세한 설명";
+			this.columnHeader4.Text = "Detail explanation";
 			this.columnHeader4.Width = 245;
 			this.textBoxShutdownString.Location = new global::System.Drawing.Point(120, 16);
 			this.textBoxShutdownString.MaxLength = 32;
@@ -191,7 +193,7 @@
 			this.labelPerformanceString.Name = "labelPerformanceString";
 			this.labelPerformanceString.Size = new global::System.Drawing.Size(112, 24);
 			this.labelPerformanceString.TabIndex = 34;
-			this.labelPerformanceString.Text = "성능 출력 접두문";
+			this.labelPerformanceString.Text = "Performance output prefix";
 			this.labelPerformanceString.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.textBoxPerformanceString.Location = new global::System.Drawing.Point(120, 40);
 			this.textBoxPerformanceString.MaxLength = 32;
@@ -202,13 +204,13 @@
 			this.labelShutdownString.Name = "labelShutdownString";
 			this.labelShutdownString.Size = new global::System.Drawing.Size(112, 24);
 			this.labelShutdownString.TabIndex = 34;
-			this.labelShutdownString.Text = "종료 요구 입력문";
+			this.labelShutdownString.Text = "End request input statement";
 			this.labelShutdownString.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.labelPerformanceDescription.Location = new global::System.Drawing.Point(8, 64);
 			this.labelPerformanceDescription.Name = "labelPerformanceDescription";
 			this.labelPerformanceDescription.Size = new global::System.Drawing.Size(112, 24);
 			this.labelPerformanceDescription.TabIndex = 34;
-			this.labelPerformanceDescription.Text = "성능 출력문 설정";
+			this.labelPerformanceDescription.Text = "Performance output statement setting";
 			this.labelPerformanceDescription.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
 			this.buttonPerformanceDescAdd.Location = new global::System.Drawing.Point(10, 88);
 			this.buttonPerformanceDescAdd.Name = "buttonPerformanceDescAdd";
@@ -236,7 +238,7 @@
 			this.groupBoxProperty.Size = new global::System.Drawing.Size(424, 136);
 			this.groupBoxProperty.TabIndex = 6;
 			this.groupBoxProperty.TabStop = false;
-			this.groupBoxProperty.Text = "프로세스 속성";
+			this.groupBoxProperty.Text = "Process attribute";
 			this.buttonPropertyDel.Location = new global::System.Drawing.Point(10, 44);
 			this.buttonPropertyDel.Name = "buttonPropertyDel";
 			this.buttonPropertyDel.Size = new global::System.Drawing.Size(24, 24);
@@ -252,7 +254,7 @@
 			this.listViewProperty.Columns.AddRange(new global::System.Windows.Forms.ColumnHeader[]
 			{
 				columnHeader,
-				columnHeader2
+				defComm
 			});
 			this.listViewProperty.FullRowSelect = true;
 			this.listViewProperty.HeaderStyle = global::System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
@@ -274,7 +276,7 @@
 			this.groupBoxChild.Size = new global::System.Drawing.Size(424, 103);
 			this.groupBoxChild.TabIndex = 8;
 			this.groupBoxChild.TabStop = false;
-			this.groupBoxChild.Text = "자식 프로세스";
+			this.groupBoxChild.Text = "Child process";
 			this.textBoxChildProcessLogStr.Location = new global::System.Drawing.Point(120, 42);
 			this.textBoxChildProcessLogStr.MaxLength = 32;
 			this.textBoxChildProcessLogStr.Name = "textBoxChildProcessLogStr";
@@ -286,7 +288,7 @@
 			this.labelChildProcessLogStr.Name = "labelChildProcessLogStr";
 			this.labelChildProcessLogStr.Size = new global::System.Drawing.Size(57, 12);
 			this.labelChildProcessLogStr.TabIndex = 36;
-			this.labelChildProcessLogStr.Text = "로그 형식";
+			this.labelChildProcessLogStr.Text = "Log format";
 			this.textBoxMaxChildProcessCount.Location = new global::System.Drawing.Point(120, 69);
 			this.textBoxMaxChildProcessCount.MaxLength = 32;
 			this.textBoxMaxChildProcessCount.Name = "textBoxMaxChildProcessCount";
@@ -297,13 +299,13 @@
 			this.labelMaxChildProcessCount.Name = "labelMaxChildProcessCount";
 			this.labelMaxChildProcessCount.Size = new global::System.Drawing.Size(101, 12);
 			this.labelMaxChildProcessCount.TabIndex = 1;
-			this.labelMaxChildProcessCount.Text = "최대 추적 자식 수";
+			this.labelMaxChildProcessCount.Text = "Maximum number of trace children";
 			this.checkBoxTraceChildProcess.AutoSize = true;
 			this.checkBoxTraceChildProcess.Location = new global::System.Drawing.Point(10, 20);
 			this.checkBoxTraceChildProcess.Name = "checkBoxTraceChildProcess";
 			this.checkBoxTraceChildProcess.Size = new global::System.Drawing.Size(156, 16);
 			this.checkBoxTraceChildProcess.TabIndex = 0;
-			this.checkBoxTraceChildProcess.Text = "자식 프로세스 로그 추적";
+			this.checkBoxTraceChildProcess.Text = "Child process log trace";
 			this.checkBoxTraceChildProcess.UseVisualStyleBackColor = true;
 			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.None;
 			this.AutoSize = true;
@@ -382,7 +384,7 @@
 
 		private global::System.Windows.Forms.ListView listViewProperty;
 
-		private global::System.Windows.Forms.ColumnHeader columnHeader2;
+		private global::System.Windows.Forms.ColumnHeader defComm;
 
 		private global::System.Windows.Forms.GroupBox groupBoxProperty;
 

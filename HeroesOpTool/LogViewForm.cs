@@ -20,7 +20,7 @@ namespace HeroesOpTool
 			}
 			set
 			{
-				base.Text = string.Format("로그보기 - {0}", value);
+				base.Text = string.Format("View log - {0}", value);
 			}
 		}
 

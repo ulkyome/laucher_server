@@ -291,5 +291,15 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 		private ProcessPropertyDetailForm detailForm;
 
 		private RCProcess _process;
-	}
+
+        private void textBoxWorkingDirectory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxExecuteFileArgs_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
