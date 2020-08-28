@@ -1,6 +1,11 @@
-﻿namespace HeroesOpTool.RCUser
+﻿using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace HeroesOpTool.RCUser
 {
-	public partial class Login : global::System.Windows.Forms.Form
+	public partial class Login : Form
 	{
 	//	protected override void Dispose(bool disposing)
 	//	{
@@ -13,77 +18,77 @@
 
 		private void InitializeComponent()
 		{
-			global::System.ComponentModel.ComponentResourceManager componentResourceManager = new global::System.ComponentModel.ComponentResourceManager(typeof(global::HeroesOpTool.RCUser.Login));
-			this.TBoxID = new global::System.Windows.Forms.TextBox();
-			this.label1 = new global::System.Windows.Forms.Label();
-			this.label2 = new global::System.Windows.Forms.Label();
-			this.TBoxPasswd = new global::System.Windows.Forms.TextBox();
-			this.BtnLogin = new global::System.Windows.Forms.Button();
-			this.BtnExit = new global::System.Windows.Forms.Button();
-			this.LbVersion = new global::System.Windows.Forms.Label();
+			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(RCUser.Login));
+			this.TBoxID = new TextBox();
+			this.label1 = new Label();
+			this.label2 = new Label();
+			this.TBoxPasswd = new TextBox();
+			this.BtnLogin = new Button();
+			this.BtnExit = new Button();
+			this.LbVersion = new Label();
 			base.SuspendLayout();
-			this.TBoxID.BackColor = global::System.Drawing.Color.White;
-			this.TBoxID.Font = new global::System.Drawing.Font("Tahoma", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
-			this.TBoxID.Location = new global::System.Drawing.Point(128, 104);
+			this.TBoxID.BackColor = Color.White;
+			this.TBoxID.Font = new Font("Tahoma", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			this.TBoxID.Location = new Point(128, 104);
 			this.TBoxID.MaxLength = 16;
 			this.TBoxID.Name = "TBoxID";
-			this.TBoxID.Size = new global::System.Drawing.Size(112, 22);
+			this.TBoxID.Size = new Size(112, 22);
 			this.TBoxID.TabIndex = 0;
-			this.label1.BackColor = global::System.Drawing.Color.Transparent;
-			this.label1.Font = new global::System.Drawing.Font("Tahoma", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
-			this.label1.Location = new global::System.Drawing.Point(56, 104);
+			this.label1.BackColor = Color.Transparent;
+			this.label1.Font = new Font("Tahoma", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			this.label1.Location = new Point(56, 104);
 			this.label1.Name = "label1";
-			this.label1.Size = new global::System.Drawing.Size(64, 24);
+			this.label1.Size = new Size(64, 24);
 			this.label1.TabIndex = 1;
 			this.label1.Text = "ID";
-			this.label1.TextAlign = global::System.Drawing.ContentAlignment.MiddleCenter;
-			this.label2.BackColor = global::System.Drawing.Color.Transparent;
-			this.label2.Font = new global::System.Drawing.Font("Tahoma", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
-			this.label2.Location = new global::System.Drawing.Point(56, 136);
+			this.label1.TextAlign = ContentAlignment.MiddleCenter;
+			this.label2.BackColor = Color.Transparent;
+			this.label2.Font = new Font("Tahoma", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			this.label2.Location = new Point(56, 136);
 			this.label2.Name = "label2";
-			this.label2.Size = new global::System.Drawing.Size(64, 24);
+			this.label2.Size = new Size(64, 24);
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Password";
-			this.label2.TextAlign = global::System.Drawing.ContentAlignment.MiddleCenter;
-			this.TBoxPasswd.BackColor = global::System.Drawing.Color.White;
-			this.TBoxPasswd.Font = new global::System.Drawing.Font("Tahoma", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
-			this.TBoxPasswd.Location = new global::System.Drawing.Point(128, 136);
+			this.label2.TextAlign = ContentAlignment.MiddleCenter;
+			this.TBoxPasswd.BackColor = Color.White;
+			this.TBoxPasswd.Font = new Font("Tahoma", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			this.TBoxPasswd.Location = new Point(128, 136);
 			this.TBoxPasswd.MaxLength = 16;
 			this.TBoxPasswd.Name = "TBoxPasswd";
 			this.TBoxPasswd.PasswordChar = '*';
-			this.TBoxPasswd.Size = new global::System.Drawing.Size(112, 22);
+			this.TBoxPasswd.Size = new Size(112, 22);
 			this.TBoxPasswd.TabIndex = 0;
-			this.BtnLogin.BackColor = global::System.Drawing.Color.Transparent;
-			this.BtnLogin.FlatStyle = global::System.Windows.Forms.FlatStyle.Popup;
-			this.BtnLogin.Location = new global::System.Drawing.Point(184, 168);
+			this.BtnLogin.BackColor = Color.Transparent;
+			this.BtnLogin.FlatStyle = FlatStyle.Popup;
+			this.BtnLogin.Location = new Point(184, 168);
 			this.BtnLogin.Name = "BtnLogin";
-			this.BtnLogin.Size = new global::System.Drawing.Size(48, 24);
+			this.BtnLogin.Size = new Size(48, 24);
 			this.BtnLogin.TabIndex = 2;
 			this.BtnLogin.Text = "Login";
 			this.BtnLogin.UseVisualStyleBackColor = false;
-			this.BtnLogin.Click += new global::System.EventHandler(this.BtnLogin_Click);
-			this.BtnExit.BackColor = global::System.Drawing.Color.Transparent;
-			this.BtnExit.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
-			this.BtnExit.FlatStyle = global::System.Windows.Forms.FlatStyle.Popup;
-			this.BtnExit.Location = new global::System.Drawing.Point(240, 168);
+			this.BtnLogin.Click += new EventHandler(this.BtnLogin_Click);
+			this.BtnExit.BackColor = Color.Transparent;
+			this.BtnExit.DialogResult = DialogResult.Cancel;
+			this.BtnExit.FlatStyle = FlatStyle.Popup;
+			this.BtnExit.Location = new Point(240, 168);
 			this.BtnExit.Name = "BtnExit";
-			this.BtnExit.Size = new global::System.Drawing.Size(48, 24);
+			this.BtnExit.Size = new Size(48, 24);
 			this.BtnExit.TabIndex = 2;
 			this.BtnExit.Text = "Exit";
 			this.BtnExit.UseVisualStyleBackColor = false;
 			this.LbVersion.AutoSize = true;
-			this.LbVersion.BackColor = global::System.Drawing.Color.Transparent;
-			this.LbVersion.Location = new global::System.Drawing.Point(12, 173);
+			this.LbVersion.BackColor = Color.Transparent;
+			this.LbVersion.Location = new Point(12, 173);
 			this.LbVersion.Name = "LbVersion";
-			this.LbVersion.Size = new global::System.Drawing.Size(32, 14);
+			this.LbVersion.Size = new Size(32, 14);
 			this.LbVersion.TabIndex = 3;
 			this.LbVersion.Text = "Build";
-			this.LbVersion.TextAlign = global::System.Drawing.ContentAlignment.MiddleLeft;
+			this.LbVersion.TextAlign = ContentAlignment.MiddleLeft;
 			base.AcceptButton = this.BtnLogin;
-			this.AutoScaleBaseSize = new global::System.Drawing.Size(6, 15);
-			this.BackgroundImage = (global::System.Drawing.Image)componentResourceManager.GetObject("$this.BackgroundImage");
+			this.AutoScaleBaseSize = new Size(6, 15);
+			this.BackgroundImage = BackgroundImage;
 			base.CancelButton = this.BtnExit;
-			base.ClientSize = new global::System.Drawing.Size(300, 200);
+			base.ClientSize = new Size(300, 200);
 			base.Controls.Add(this.LbVersion);
 			base.Controls.Add(this.BtnLogin);
 			base.Controls.Add(this.label1);
@@ -91,12 +96,12 @@
 			base.Controls.Add(this.TBoxPasswd);
 			base.Controls.Add(this.label2);
 			base.Controls.Add(this.BtnExit);
-			this.Font = new global::System.Drawing.Font("Tahoma", 9f, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point, 0);
-			base.FormBorderStyle = global::System.Windows.Forms.FormBorderStyle.None;
-			base.Icon = (global::System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
+			this.Font = new Font("Tahoma", 9f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			base.FormBorderStyle = FormBorderStyle.None;
+			base.Icon = Icon;
 			base.MaximizeBox = false;
 			base.Name = "Login";
-			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterScreen;
+			base.StartPosition = FormStartPosition.CenterScreen;
 			this.Text = "HeroesOpTool Login";
 			base.ResumeLayout(false);
 			base.PerformLayout();
@@ -104,18 +109,18 @@
 
 		//private global::System.ComponentModel.IContainer components;
 
-		private global::System.Windows.Forms.TextBox TBoxID;
+		private TextBox TBoxID;
 
-		private global::System.Windows.Forms.Label label1;
+		private Label label1;
 
-		private global::System.Windows.Forms.Label label2;
+		private Label label2;
 
-		private global::System.Windows.Forms.TextBox TBoxPasswd;
+		private TextBox TBoxPasswd;
 
-		private global::System.Windows.Forms.Button BtnLogin;
+		private Button BtnLogin;
 
-		private global::System.Windows.Forms.Button BtnExit;
+		private Button BtnExit;
 
-		private global::System.Windows.Forms.Label LbVersion;
+		private Label LbVersion;
 	}
 }

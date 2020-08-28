@@ -1,6 +1,10 @@
-﻿namespace HeroesOpTool
+﻿using AxSHDocVw;
+using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace HeroesOpTool
 {
-	public partial class HelpViewer : global::System.Windows.Forms.Form
+	public partial class HelpViewer : Form
 	{
 		protected override void Dispose(bool disposing)
 		{
@@ -14,14 +18,14 @@
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
-            this.TViewHelpIndex = new System.Windows.Forms.TreeView();
-            this.TreeIcons = new System.Windows.Forms.ImageList(this.components);
-            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.TViewHelpIndex = new TreeView();
+            this.TreeIcons = new ImageList(this.components);
+            this.splitter1 = new Splitter();
             this.SuspendLayout();
             // 
             // TViewHelpIndex
             // 
-            this.TViewHelpIndex.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TViewHelpIndex.Dock = DockStyle.Left;
             this.TViewHelpIndex.HideSelection = false;
             this.TViewHelpIndex.ImageIndex = 0;
             this.TViewHelpIndex.ImageList = this.TreeIcons;
@@ -32,11 +36,11 @@
             this.TViewHelpIndex.SelectedImageIndex = 0;
             this.TViewHelpIndex.Size = new System.Drawing.Size(153, 573);
             this.TViewHelpIndex.TabIndex = 0;
-            this.TViewHelpIndex.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.TViewHelpIndex_AfterSelect);
+            this.TViewHelpIndex.AfterSelect += new TreeViewEventHandler(this.TViewHelpIndex_AfterSelect);
             // 
             // TreeIcons
             // 
-            this.TreeIcons.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.TreeIcons.ColorDepth = ColorDepth.Depth8Bit;
             this.TreeIcons.ImageSize = new System.Drawing.Size(16, 16);
             this.TreeIcons.TransparentColor = System.Drawing.Color.Transparent;
             // 
@@ -60,14 +64,14 @@
 
 		}
 
-		private global::System.Windows.Forms.TreeView TViewHelpIndex;
+		private TreeView TViewHelpIndex;
 
-		private global::System.Windows.Forms.Splitter splitter1;
+		private Splitter splitter1;
 
-		private global::System.Windows.Forms.ImageList TreeIcons;
+		private ImageList TreeIcons;
 
-		private global::AxSHDocVw.AxWebBrowser HtmlHelpContent;
+		private AxWebBrowser HtmlHelpContent;
 
-		private global::System.ComponentModel.IContainer components;
+		private IContainer components;
 	}
 }

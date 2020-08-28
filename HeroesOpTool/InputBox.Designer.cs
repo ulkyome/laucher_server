@@ -1,6 +1,9 @@
-﻿namespace HeroesOpTool
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace HeroesOpTool
 {
-	public partial class InputBox : global::System.Windows.Forms.Form
+	public partial class InputBox : Form
 	{
 		//protected override void Dispose(bool disposing)
 		//{
@@ -13,81 +16,78 @@
 
 		private void InitializeComponent()
 		{
-            this.TBoxInput = new System.Windows.Forms.TextBox();
-            this.BtnOK = new System.Windows.Forms.Button();
-            this.BtnCancel = new System.Windows.Forms.Button();
-            this.LabelDesc = new System.Windows.Forms.Label();
+            this.TBoxInput = new TextBox();
+            this.BtnOK = new Button();
+            this.BtnCancel = new Button();
+            this.LabelDesc = new Label();
             this.SuspendLayout();
             // 
             // TBoxInput
             // 
-            this.TBoxInput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBoxInput.Location = new System.Drawing.Point(7, 37);
+            this.TBoxInput.Anchor = (AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+            this.TBoxInput.Location = new Point(7, 37);
             this.TBoxInput.Name = "TBoxInput";
-            this.TBoxInput.Size = new System.Drawing.Size(282, 20);
+            this.TBoxInput.Size = new Size(282, 20);
             this.TBoxInput.TabIndex = 0;
             // 
             // BtnOK
             // 
-            this.BtnOK.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.BtnOK.Location = new System.Drawing.Point(65, 66);
+            this.BtnOK.Anchor = AnchorStyles.Bottom;
+            this.BtnOK.DialogResult = DialogResult.OK;
+            this.BtnOK.Location = new Point(65, 66);
             this.BtnOK.Name = "BtnOK";
-            this.BtnOK.Size = new System.Drawing.Size(67, 23);
+            this.BtnOK.Size = new Size(67, 23);
             this.BtnOK.TabIndex = 1;
             this.BtnOK.Text = "Ok";
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.BtnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BtnCancel.Location = new System.Drawing.Point(158, 66);
+            this.BtnCancel.Anchor = AnchorStyles.Bottom;
+            this.BtnCancel.DialogResult = DialogResult.Cancel;
+            this.BtnCancel.Location = new Point(158, 66);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(67, 23);
+            this.BtnCancel.Size = new Size(67, 23);
             this.BtnCancel.TabIndex = 1;
             this.BtnCancel.Text = "Cancel";
             // 
             // LabelDesc
             // 
-            this.LabelDesc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LabelDesc.Location = new System.Drawing.Point(7, 7);
+            this.LabelDesc.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+            this.LabelDesc.Location = new Point(7, 7);
             this.LabelDesc.Name = "LabelDesc";
-            this.LabelDesc.Size = new System.Drawing.Size(282, 22);
+            this.LabelDesc.Size = new Size(282, 22);
             this.LabelDesc.TabIndex = 2;
-            this.LabelDesc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LabelDesc.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // InputBox
             // 
             this.AcceptButton = this.BtnOK;
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new Size(5, 13);
             this.CancelButton = this.BtnCancel;
-            this.ClientSize = new System.Drawing.Size(296, 95);
+            this.ClientSize = new Size(296, 95);
             this.Controls.Add(this.LabelDesc);
             this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.TBoxInput);
             this.Controls.Add(this.BtnCancel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "InputBox";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = FormStartPosition.CenterParent;
             this.Text = "InputBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 
 		}
 
-		private global::System.Windows.Forms.Button BtnOK;
+		private Button BtnOK;
 
-		private global::System.Windows.Forms.Button BtnCancel;
+		private Button BtnCancel;
 
-		private global::System.Windows.Forms.Label LabelDesc;
+		private Label LabelDesc;
 
-		private global::System.Windows.Forms.TextBox TBoxInput;
+		private TextBox TBoxInput;
 
 		//private global::System.ComponentModel.Container components = null;
 	}

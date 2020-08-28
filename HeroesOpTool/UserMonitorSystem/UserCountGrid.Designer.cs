@@ -77,7 +77,7 @@ namespace HeroesOpTool.UserMonitorSystem
 			this.dataGrid.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 			dataGridViewCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle.BackColor = SystemColors.Control;
-			dataGridViewCellStyle.Font = new Font("굴림", 9f, FontStyle.Regular, GraphicsUnit.Point, 129);
+			dataGridViewCellStyle.Font = new Font("Roll", 9f, FontStyle.Regular, GraphicsUnit.Point, 129);
 			dataGridViewCellStyle.ForeColor = SystemColors.WindowText;
 			dataGridViewCellStyle.NullValue = "0";
 			dataGridViewCellStyle.SelectionBackColor = SystemColors.Highlight;
@@ -87,7 +87,7 @@ namespace HeroesOpTool.UserMonitorSystem
 			this.dataGrid.ColumnHeadersHeight = 22;
 			dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleCenter;
 			dataGridViewCellStyle2.BackColor = SystemColors.Window;
-			dataGridViewCellStyle2.Font = new Font("굴림", 9f, FontStyle.Regular, GraphicsUnit.Point, 129);
+			dataGridViewCellStyle2.Font = new Font("Roll", 9f, FontStyle.Regular, GraphicsUnit.Point, 129);
 			dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
 			dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
 			dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
@@ -107,7 +107,7 @@ namespace HeroesOpTool.UserMonitorSystem
 			this.label.Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
 			this.label.BackColor = SystemColors.ControlDarkDark;
 			this.label.BorderStyle = BorderStyle.FixedSingle;
-			this.label.Font = new Font("굴림", 9f, FontStyle.Bold, GraphicsUnit.Point, 129);
+			this.label.Font = new Font("Roll", 9f, FontStyle.Bold, GraphicsUnit.Point, 129);
 			this.label.ForeColor = Color.White;
 			this.label.Location = new Point(0, 0);
 			this.label.Margin = new Padding(0);
@@ -115,7 +115,7 @@ namespace HeroesOpTool.UserMonitorSystem
 			this.label.Padding = new Padding(5);
 			this.label.Size = new Size(451, 27);
 			this.label.TabIndex = 1;
-			this.label.Text = "테스트 서버 - Category ";
+			this.label.Text = "Test server - Category ";
 			this.label.TextAlign = ContentAlignment.MiddleLeft;
 			base.AutoScaleDimensions = new SizeF(7f, 12f);
 			base.AutoScaleMode = AutoScaleMode.Font;
