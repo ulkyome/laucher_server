@@ -92,7 +92,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem
 			this.label.Name = "label";
 			this.label.Size = new Size(113, 24);
 			this.label.TabIndex = 1;
-			this.label.Text = "2012-07-09 금 10:10\r\nAnnouce\r\n";
+			this.label.Text = "2012-07-09 gold 10:10\r\nAnnouce\r\n";
 			this.textBox.Anchor = (AnchorStyles.Left | AnchorStyles.Right);
 			this.textBox.BackColor = Color.White;
 			this.textBox.Location = new Point(271, 1);

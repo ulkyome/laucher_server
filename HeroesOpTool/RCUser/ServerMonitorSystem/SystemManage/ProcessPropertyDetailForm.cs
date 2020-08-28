@@ -484,6 +484,6 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			}
 		}
 
-		private bool _editable = true;
+		
 	}
 }

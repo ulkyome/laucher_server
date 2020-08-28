@@ -125,11 +125,11 @@ namespace HeroesOpTool
 			protected override void OnKeyPress(KeyPressEventArgs e)
 			{
 				base.OnKeyPress(e);
-				NumberFormatInfo numberFormat = CultureInfo.CurrentCulture.NumberFormat;
-				string numberDecimalSeparator = numberFormat.NumberDecimalSeparator;
-				string negativeSign = numberFormat.NegativeSign;
-				string text = e.KeyChar.ToString();
-				if (!char.IsDigit(e.KeyChar) && !text.Equals(numberDecimalSeparator) && !text.Equals(negativeSign))
+				NumberFormatInfo numberFormatInfo = CultureInfo.CurrentCulture.NumberFormat;
+				string decimalSeparator = numberFormatInfo.NumberDecimalSeparator;
+				string negativeSign = numberFormatInfo.NegativeSign;
+				string keyInput = e.KeyChar.ToString();
+				if (!char.IsDigit(e.KeyChar) && !keyInput.Equals(decimalSeparator) && !keyInput.Equals(negativeSign))
 				{
 					if (e.KeyChar == '\b')
 					{

@@ -1,6 +1,10 @@
-﻿namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 {
-	public partial class CustomCommandForm : global::System.Windows.Forms.Form
+	public partial class CustomCommandForm : Form
 	{
 		//protected override void Dispose(bool disposing)
 		//{
@@ -13,26 +17,26 @@
 
 		private void InitializeComponent()
 		{
-			this.groupBoxName = new global::System.Windows.Forms.GroupBox();
-			this.textBoxName = new global::System.Windows.Forms.TextBox();
-			this.textBoxCommand = new global::System.Windows.Forms.TextBox();
-			this.groupBoxCommand = new global::System.Windows.Forms.GroupBox();
-			this.groupBoxArg = new global::System.Windows.Forms.GroupBox();
-			this.buttoArgDel = new global::System.Windows.Forms.Button();
-			this.buttonArgAdd = new global::System.Windows.Forms.Button();
-			this.comboBoxType = new global::System.Windows.Forms.ComboBox();
-			this.labelArgType = new global::System.Windows.Forms.Label();
-			this.labelArgName = new global::System.Windows.Forms.Label();
-			this.textBoxArgName = new global::System.Windows.Forms.TextBox();
-			this.groupBoxArgList = new global::System.Windows.Forms.GroupBox();
-			this.textBoxDesc = new global::System.Windows.Forms.TextBox();
-			this.listViewArg = new global::System.Windows.Forms.ListView();
-			this.labelDesc = new global::System.Windows.Forms.Label();
-			this.textBoxRawCommand = new global::System.Windows.Forms.TextBox();
-			this.buttonOK = new global::System.Windows.Forms.Button();
-			this.buttonCancel = new global::System.Windows.Forms.Button();
-			global::System.Windows.Forms.ColumnHeader columnHeader = new global::System.Windows.Forms.ColumnHeader();
-			global::System.Windows.Forms.ColumnHeader columnHeader2 = new global::System.Windows.Forms.ColumnHeader();
+			this.groupBoxName = new GroupBox();
+			this.textBoxName = new TextBox();
+			this.textBoxCommand = new TextBox();
+			this.groupBoxCommand = new GroupBox();
+			this.groupBoxArg = new GroupBox();
+			this.buttoArgDel = new Button();
+			this.buttonArgAdd = new Button();
+			this.comboBoxType = new ComboBox();
+			this.labelArgType = new Label();
+			this.labelArgName = new Label();
+			this.textBoxArgName = new TextBox();
+			this.groupBoxArgList = new GroupBox();
+			this.textBoxDesc = new TextBox();
+			this.listViewArg = new ListView();
+			this.labelDesc = new Label();
+			this.textBoxRawCommand = new TextBox();
+			this.buttonOK = new Button();
+			this.buttonCancel = new Button();
+			ColumnHeader columnHeader = new ColumnHeader();
+			ColumnHeader columnHeader2 = new ColumnHeader();
 			this.groupBoxName.SuspendLayout();
 			this.groupBoxCommand.SuspendLayout();
 			this.groupBoxArg.SuspendLayout();
@@ -41,28 +45,28 @@
 			columnHeader.Width = 97;
 			columnHeader2.Width = 67;
 			this.groupBoxName.Controls.Add(this.textBoxName);
-			this.groupBoxName.Location = new global::System.Drawing.Point(12, 12);
+			this.groupBoxName.Location = new Point(12, 12);
 			this.groupBoxName.Name = "groupBoxName";
-			this.groupBoxName.Size = new global::System.Drawing.Size(174, 45);
+			this.groupBoxName.Size = new Size(174, 45);
 			this.groupBoxName.TabIndex = 1;
 			this.groupBoxName.TabStop = false;
 			this.groupBoxName.Text = "Command name";
-			this.textBoxName.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxName.Location = new global::System.Drawing.Point(6, 18);
+			this.textBoxName.Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
+			this.textBoxName.Location = new Point(6, 18);
 			this.textBoxName.Name = "textBoxName";
-			this.textBoxName.Size = new global::System.Drawing.Size(162, 21);
+			this.textBoxName.Size = new Size(162, 21);
 			this.textBoxName.TabIndex = 0;
-			this.textBoxName.TextChanged += new global::System.EventHandler(this.textBoxName_TextChanged);
-			this.textBoxCommand.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxCommand.Location = new global::System.Drawing.Point(6, 18);
+			this.textBoxName.TextChanged += new EventHandler(this.textBoxName_TextChanged);
+			this.textBoxCommand.Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
+			this.textBoxCommand.Location = new Point(6, 18);
 			this.textBoxCommand.Name = "textBoxCommand";
-			this.textBoxCommand.Size = new global::System.Drawing.Size(162, 21);
+			this.textBoxCommand.Size = new Size(162, 21);
 			this.textBoxCommand.TabIndex = 0;
-			this.textBoxCommand.TextChanged += new global::System.EventHandler(this.textBoxCommand_TextChanged);
+			this.textBoxCommand.TextChanged += new EventHandler(this.textBoxCommand_TextChanged);
 			this.groupBoxCommand.Controls.Add(this.textBoxCommand);
-			this.groupBoxCommand.Location = new global::System.Drawing.Point(12, 63);
+			this.groupBoxCommand.Location = new Point(12, 63);
 			this.groupBoxCommand.Name = "groupBoxCommand";
-			this.groupBoxCommand.Size = new global::System.Drawing.Size(174, 45);
+			this.groupBoxCommand.Size = new Size(174, 45);
 			this.groupBoxCommand.TabIndex = 2;
 			this.groupBoxCommand.TabStop = false;
 			this.groupBoxCommand.Text = "Command";
@@ -72,115 +76,115 @@
 			this.groupBoxArg.Controls.Add(this.labelArgType);
 			this.groupBoxArg.Controls.Add(this.labelArgName);
 			this.groupBoxArg.Controls.Add(this.textBoxArgName);
-			this.groupBoxArg.Location = new global::System.Drawing.Point(12, 114);
+			this.groupBoxArg.Location = new Point(12, 114);
 			this.groupBoxArg.Name = "groupBoxArg";
-			this.groupBoxArg.Size = new global::System.Drawing.Size(174, 104);
+			this.groupBoxArg.Size = new Size(174, 104);
 			this.groupBoxArg.TabIndex = 3;
 			this.groupBoxArg.TabStop = false;
 			this.groupBoxArg.Text = "factor";
-			this.buttoArgDel.Location = new global::System.Drawing.Point(144, 72);
+			this.buttoArgDel.Location = new Point(144, 72);
 			this.buttoArgDel.Name = "buttoArgDel";
-			this.buttoArgDel.Size = new global::System.Drawing.Size(24, 24);
+			this.buttoArgDel.Size = new Size(24, 24);
 			this.buttoArgDel.TabIndex = 5;
 			this.buttoArgDel.Text = "－";
-			this.buttoArgDel.Click += new global::System.EventHandler(this.buttoArgDel_Click);
-			this.buttonArgAdd.Location = new global::System.Drawing.Point(114, 72);
+			this.buttoArgDel.Click += new EventHandler(this.buttoArgDel_Click);
+			this.buttonArgAdd.Location = new Point(114, 72);
 			this.buttonArgAdd.Name = "buttonArgAdd";
-			this.buttonArgAdd.Size = new global::System.Drawing.Size(24, 24);
+			this.buttonArgAdd.Size = new Size(24, 24);
 			this.buttonArgAdd.TabIndex = 4;
 			this.buttonArgAdd.Text = "＋";
-			this.buttonArgAdd.Click += new global::System.EventHandler(this.buttonArgAdd_Click);
-			this.comboBoxType.DropDownStyle = global::System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.buttonArgAdd.Click += new EventHandler(this.buttonArgAdd_Click);
+			this.comboBoxType.DropDownStyle = ComboBoxStyle.DropDownList;
 			this.comboBoxType.FormattingEnabled = true;
-			this.comboBoxType.Location = new global::System.Drawing.Point(41, 46);
+			this.comboBoxType.Location = new Point(41, 46);
 			this.comboBoxType.Name = "comboBoxType";
-			this.comboBoxType.Size = new global::System.Drawing.Size(127, 20);
+			this.comboBoxType.Size = new Size(127, 20);
 			this.comboBoxType.TabIndex = 3;
-			this.comboBoxType.SelectedIndexChanged += new global::System.EventHandler(this.comboBoxType_SelectedIndexChanged);
+			this.comboBoxType.SelectedIndexChanged += new EventHandler(this.comboBoxType_SelectedIndexChanged);
 			this.labelArgType.AutoSize = true;
-			this.labelArgType.Location = new global::System.Drawing.Point(6, 48);
+			this.labelArgType.Location = new Point(6, 48);
 			this.labelArgType.Name = "labelArgType";
-			this.labelArgType.Size = new global::System.Drawing.Size(29, 12);
+			this.labelArgType.Size = new Size(29, 12);
 			this.labelArgType.TabIndex = 2;
 			this.labelArgType.Text = "type";
 			this.labelArgName.AutoSize = true;
-			this.labelArgName.Location = new global::System.Drawing.Point(6, 21);
+			this.labelArgName.Location = new Point(6, 21);
 			this.labelArgName.Name = "labelArgName";
-			this.labelArgName.Size = new global::System.Drawing.Size(29, 12);
+			this.labelArgName.Size = new Size(29, 12);
 			this.labelArgName.TabIndex = 0;
 			this.labelArgName.Text = "name";
-			this.textBoxArgName.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxArgName.Location = new global::System.Drawing.Point(41, 18);
+			this.textBoxArgName.Anchor = (AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right);
+			this.textBoxArgName.Location = new Point(41, 18);
 			this.textBoxArgName.Name = "textBoxArgName";
-			this.textBoxArgName.Size = new global::System.Drawing.Size(127, 21);
+			this.textBoxArgName.Size = new Size(127, 21);
 			this.textBoxArgName.TabIndex = 1;
-			this.textBoxArgName.TextChanged += new global::System.EventHandler(this.textBoxArgName_TextChanged);
-			this.groupBoxArgList.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
+			this.textBoxArgName.TextChanged += new EventHandler(this.textBoxArgName_TextChanged);
+			this.groupBoxArgList.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
 			this.groupBoxArgList.Controls.Add(this.textBoxDesc);
 			this.groupBoxArgList.Controls.Add(this.listViewArg);
 			this.groupBoxArgList.Controls.Add(this.labelDesc);
-			this.groupBoxArgList.Location = new global::System.Drawing.Point(193, 13);
+			this.groupBoxArgList.Location = new Point(193, 13);
 			this.groupBoxArgList.Name = "groupBoxArgList";
-			this.groupBoxArgList.Size = new global::System.Drawing.Size(187, 205);
+			this.groupBoxArgList.Size = new Size(187, 205);
 			this.groupBoxArgList.TabIndex = 4;
 			this.groupBoxArgList.TabStop = false;
 			this.groupBoxArgList.Text = "Argument list";
-			this.textBoxDesc.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxDesc.Location = new global::System.Drawing.Point(7, 176);
+			this.textBoxDesc.Anchor = (AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+			this.textBoxDesc.Location = new Point(7, 176);
 			this.textBoxDesc.Name = "textBoxDesc";
-			this.textBoxDesc.Size = new global::System.Drawing.Size(174, 21);
+			this.textBoxDesc.Size = new Size(174, 21);
 			this.textBoxDesc.TabIndex = 2;
-			this.textBoxDesc.TextChanged += new global::System.EventHandler(this.textBoxDesc_TextChanged);
-			this.listViewArg.Anchor = (global::System.Windows.Forms.AnchorStyles.Top | global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.listViewArg.Columns.AddRange(new global::System.Windows.Forms.ColumnHeader[]
+			this.textBoxDesc.TextChanged += new EventHandler(this.textBoxDesc_TextChanged);
+			this.listViewArg.Anchor = (AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+			this.listViewArg.Columns.AddRange(new ColumnHeader[]
 			{
 				columnHeader,
 				columnHeader2
 			});
 			this.listViewArg.FullRowSelect = true;
 			this.listViewArg.GridLines = true;
-			this.listViewArg.HeaderStyle = global::System.Windows.Forms.ColumnHeaderStyle.None;
+			this.listViewArg.HeaderStyle = ColumnHeaderStyle.None;
 			this.listViewArg.HideSelection = false;
-			this.listViewArg.Location = new global::System.Drawing.Point(7, 17);
+			this.listViewArg.Location = new Point(7, 17);
 			this.listViewArg.Name = "listViewArg";
 			this.listViewArg.ShowGroups = false;
-			this.listViewArg.Size = new global::System.Drawing.Size(174, 138);
+			this.listViewArg.Size = new Size(174, 138);
 			this.listViewArg.TabIndex = 0;
 			this.listViewArg.UseCompatibleStateImageBehavior = false;
-			this.listViewArg.View = global::System.Windows.Forms.View.Details;
-			this.listViewArg.SelectedIndexChanged += new global::System.EventHandler(this.listViewArg_SelectedIndexChanged);
-			this.labelDesc.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left);
+			this.listViewArg.View = View.Details;
+			this.listViewArg.SelectedIndexChanged += new EventHandler(this.listViewArg_SelectedIndexChanged);
+			this.labelDesc.Anchor = (AnchorStyles.Bottom | AnchorStyles.Left);
 			this.labelDesc.AutoSize = true;
-			this.labelDesc.Location = new global::System.Drawing.Point(6, 161);
+			this.labelDesc.Location = new Point(6, 161);
 			this.labelDesc.Name = "labelDesc";
-			this.labelDesc.Size = new global::System.Drawing.Size(29, 12);
+			this.labelDesc.Size = new Size(29, 12);
 			this.labelDesc.TabIndex = 1;
 			this.labelDesc.Text = "Explanation";
-			this.textBoxRawCommand.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Left | global::System.Windows.Forms.AnchorStyles.Right);
-			this.textBoxRawCommand.Location = new global::System.Drawing.Point(12, 224);
+			this.textBoxRawCommand.Anchor = (AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right);
+			this.textBoxRawCommand.Location = new Point(12, 224);
 			this.textBoxRawCommand.Name = "textBoxRawCommand";
-			this.textBoxRawCommand.Size = new global::System.Drawing.Size(368, 21);
+			this.textBoxRawCommand.Size = new Size(368, 21);
 			this.textBoxRawCommand.TabIndex = 0;
-			this.textBoxRawCommand.TextChanged += new global::System.EventHandler(this.textBoxRawCommand_TextChanged);
-			this.buttonOK.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
-			this.buttonOK.DialogResult = global::System.Windows.Forms.DialogResult.OK;
-			this.buttonOK.Location = new global::System.Drawing.Point(166, 252);
+			this.textBoxRawCommand.TextChanged += new EventHandler(this.textBoxRawCommand_TextChanged);
+			this.buttonOK.Anchor = (AnchorStyles.Bottom | AnchorStyles.Right);
+			this.buttonOK.DialogResult = DialogResult.OK;
+			this.buttonOK.Location = new Point(166, 252);
 			this.buttonOK.Name = "buttonOK";
-			this.buttonOK.Size = new global::System.Drawing.Size(104, 24);
+			this.buttonOK.Size = new Size(104, 24);
 			this.buttonOK.TabIndex = 5;
 			this.buttonOK.Text = "Confirm";
-			this.buttonCancel.Anchor = (global::System.Windows.Forms.AnchorStyles.Bottom | global::System.Windows.Forms.AnchorStyles.Right);
-			this.buttonCancel.DialogResult = global::System.Windows.Forms.DialogResult.Cancel;
-			this.buttonCancel.Location = new global::System.Drawing.Point(276, 252);
+			this.buttonCancel.Anchor = (AnchorStyles.Bottom | AnchorStyles.Right);
+			this.buttonCancel.DialogResult = DialogResult.Cancel;
+			this.buttonCancel.Location = new Point(276, 252);
 			this.buttonCancel.Name = "buttonCancel";
-			this.buttonCancel.Size = new global::System.Drawing.Size(104, 24);
+			this.buttonCancel.Size = new Size(104, 24);
 			this.buttonCancel.TabIndex = 6;
 			this.buttonCancel.Text = "Cancel";
 			base.AcceptButton = this.buttonOK;
-			base.AutoScaleDimensions = new global::System.Drawing.SizeF(7f, 12f);
-			base.AutoScaleMode = global::System.Windows.Forms.AutoScaleMode.Font;
+			base.AutoScaleDimensions = new SizeF(7f, 12f);
+			base.AutoScaleMode = AutoScaleMode.Font;
 			base.CancelButton = this.buttonCancel;
-			base.ClientSize = new global::System.Drawing.Size(392, 288);
+			base.ClientSize = new Size(392, 288);
 			base.Controls.Add(this.buttonOK);
 			base.Controls.Add(this.textBoxRawCommand);
 			base.Controls.Add(this.buttonCancel);
@@ -189,9 +193,9 @@
 			base.Controls.Add(this.groupBoxCommand);
 			base.Controls.Add(this.groupBoxName);
 			this.Name = "CustomCommandForm";
-			base.StartPosition = global::System.Windows.Forms.FormStartPosition.CenterParent;
+			base.StartPosition = FormStartPosition.CenterParent;
 			this.Text = "Custom instruction";
-			base.FormClosing += new global::System.Windows.Forms.FormClosingEventHandler(this.CustomCommandForm_FormClosing);
+			base.FormClosing += new FormClosingEventHandler(this.CustomCommandForm_FormClosing);
 			this.groupBoxName.ResumeLayout(false);
 			this.groupBoxName.PerformLayout();
 			this.groupBoxCommand.ResumeLayout(false);
@@ -204,42 +208,42 @@
 			base.PerformLayout();
 		}
 
-		//private global::System.ComponentModel.IContainer components;
+		//private ComponentModel.IContainer components;
 
-		private global::System.Windows.Forms.GroupBox groupBoxName;
+		private GroupBox groupBoxName;
 
-		private global::System.Windows.Forms.TextBox textBoxName;
+		private TextBox textBoxName;
 
-		private global::System.Windows.Forms.TextBox textBoxCommand;
+		private TextBox textBoxCommand;
 
-		private global::System.Windows.Forms.GroupBox groupBoxCommand;
+		private GroupBox groupBoxCommand;
 
-		private global::System.Windows.Forms.GroupBox groupBoxArg;
+		private GroupBox groupBoxArg;
 
-		private global::System.Windows.Forms.TextBox textBoxArgName;
+		private TextBox textBoxArgName;
 
-		private global::System.Windows.Forms.GroupBox groupBoxArgList;
+		private GroupBox groupBoxArgList;
 
-		private global::System.Windows.Forms.TextBox textBoxRawCommand;
+		private TextBox textBoxRawCommand;
 
-		private global::System.Windows.Forms.Button buttonOK;
+		private Button buttonOK;
 
-		private global::System.Windows.Forms.Button buttonCancel;
+		private Button buttonCancel;
 
-		private global::System.Windows.Forms.ComboBox comboBoxType;
+		private ComboBox comboBoxType;
 
-		private global::System.Windows.Forms.Label labelDesc;
+		private Label labelDesc;
 
-		private global::System.Windows.Forms.Label labelArgType;
+		private Label labelArgType;
 
-		private global::System.Windows.Forms.Label labelArgName;
+		private Label labelArgName;
 
-		private global::System.Windows.Forms.Button buttoArgDel;
+		private Button buttoArgDel;
 
-		private global::System.Windows.Forms.Button buttonArgAdd;
+		private Button buttonArgAdd;
 
-		private global::System.Windows.Forms.TextBox textBoxDesc;
+		private TextBox textBoxDesc;
 
-		private global::System.Windows.Forms.ListView listViewArg;
+		private ListView listViewArg;
 	}
 }

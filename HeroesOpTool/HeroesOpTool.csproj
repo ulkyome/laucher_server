@@ -124,9 +124,6 @@
     </Compile>
     <Compile Include="LocalizeText.cs" />
     <Compile Include="LogGenerator.cs" />
-    <Compile Include="LogTextBox.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="LogViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -325,11 +322,22 @@
     <EmbeddedResource Include="InputBox.resx">
       <DependentUpon>InputBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogTextBox.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LogTextBox.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+	 <Compile Include="LogTextBox.Designer.cs">
+      <DependentUpon>LogTextBox.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="LogViewForm.resx">
       <DependentUpon>LogViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>MainForm1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
