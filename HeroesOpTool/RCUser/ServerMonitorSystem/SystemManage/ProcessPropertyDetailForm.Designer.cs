@@ -53,7 +53,8 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 			this.groupBoxChild = new GroupBox();
 			this.textBoxChildProcessLogStr = new TextBox();
 			this.labelChildProcessLogStr = new Label();
-			this.textBoxMaxChildProcessCount = new Utility.NumericTextBox();
+			//this.textBoxMaxChildProcessCount = new Utility.NumericTextBox(); временно
+			this.textBoxMaxChildProcessCount = new TextBox();
 			this.labelMaxChildProcessCount = new Label();
 			this.checkBoxTraceChildProcess = new CheckBox();
 			ColumnHeader columnHeader5 = new ColumnHeader();
@@ -405,8 +406,8 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 
 		private Label labelChildProcessLogStr;
 
-		private Utility.NumericTextBox textBoxMaxChildProcessCount;
-		//private TextBox textBoxMaxChildProcessCount;
+		//private Utility.NumericTextBox textBoxMaxChildProcessCount;
+		private TextBox textBoxMaxChildProcessCount;
 
 		private Label labelMaxChildProcessCount;
 

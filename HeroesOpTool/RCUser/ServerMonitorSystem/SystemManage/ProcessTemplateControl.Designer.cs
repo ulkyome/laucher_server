@@ -252,7 +252,7 @@ namespace HeroesOpTool.RCUser.ServerMonitorSystem.SystemManage
 					if (rcprocess.Name == text)
 					{
 						ProcessPropertyForm processPropertyForm = new ProcessPropertyForm(rcprocess, 0, true, false);
-						while (processPropertyForm.ShowDialog() == DialogResult.OK)
+						if (processPropertyForm.ShowDialog() == DialogResult.OK)
 						{
 							try
 							{
